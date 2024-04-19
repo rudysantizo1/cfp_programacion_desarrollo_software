@@ -41,7 +41,6 @@
 	        Escribir  "el area del rectangulo es: ", area
 	        Escribir "El perimetro del rectangulo es: ", perimetro
         FinAlgoritmo
-
     </code>
 </pre>
 
@@ -53,7 +52,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejercicio3
 	        //Promedio de Tres Números
 	        Definir r_uno, r_dos, r_tres Como Entero
@@ -70,8 +68,6 @@
 
 	        Escribir "El promedio de los tres numeros es: ", resultado_p
         FinAlgoritmo
-
-
     </code>
 </pre>
 
@@ -103,7 +99,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejercicio5
 	        //Edad en Días
 	        Definir años, dias Como Entero
@@ -115,7 +110,6 @@
         
 	        Escribir "Su edad en dias es: ", dias
         FinAlgoritmo
-
     </code>
 </pre>
 
@@ -127,7 +121,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejericicio6
 	        //Costo de Llamada Telefónica
 	        Definir minutos Como Entero
@@ -141,7 +134,6 @@
 
 	        Escribir "Su costo de su llamda fue: $",costo
         FinAlgoritmo
-
     </code>
 </pre>
 
@@ -152,7 +144,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejercicio7
 	        //Cálculo de Descuento
 	        Definir precio, descuento, f_precio Como Real
@@ -178,7 +169,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejercicio8
 	        //Días a Segundos
 	        Definir dias, hour, mins, segs Como Entero
@@ -193,7 +183,6 @@
 
 	        Escribir "El resultado de los segundos de dias es: ", segs
         FinAlgoritmo
-
     </code>
 </pre>
 
@@ -205,7 +194,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejercicio9
 	        Definir radio, circuferencia, area Como Real
 	        Escribir "Ingrese el numero de radio del circulo"
@@ -214,7 +202,6 @@
 
 	        Escribir "El area del circulo es: ", area
         FinAlgoritmo
-
     </code>
 </pre>
 
@@ -226,7 +213,6 @@
 
 <pre>    
     <code>
-
         Algoritmo ejercicio10
 	        //Minutos a Horas y Minutos
 	        Definir hora, mins Como Real
@@ -240,7 +226,6 @@
 	        Escribir "las horas y mins es: ", hora
 	
         FinAlgoritmo
-
     </code>
 </pre>
 
