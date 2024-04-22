@@ -224,7 +224,6 @@
 	        hora = mins / hora
 
 	        Escribir "las horas y mins es: ", hora
-	
         FinAlgoritmo
     </code>
 </pre>
