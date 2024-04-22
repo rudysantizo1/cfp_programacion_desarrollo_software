@@ -213,6 +213,9 @@
 
 <pre>    
     <code>
+	Funcion minutosHora()
+	FinFuncion
+	    
         Algoritmo ejercicio10
 	        //Minutos a Horas y Minutos
 	        Definir hora, mins Como Real
