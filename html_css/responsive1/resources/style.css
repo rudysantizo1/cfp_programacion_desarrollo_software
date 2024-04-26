@@ -4,7 +4,7 @@
     font-weight: bold;
 }
 
-li, div{
+div{
     color: white ;
 }
 
@@ -50,6 +50,7 @@ img{
 .logo{
     width: 150px;
     height: 40px;
+    position: relative;
 }
 
 .todos_productos{
@@ -77,6 +78,146 @@ img{
 }
 
 .imagen_grande{
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 30%;
+    height: 300px;
 }
+
+.imagen_fondo{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    left: 10px;
+    filter: saturate(1000%);
+    z-index: 0;
+    
+}
+
+.imagen_frente{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -50px;
+    left: 130px;
+    z-index: 1;
+    background: linear-gradient(45deg, rgba(240,171,32,0.5) 1%, rgba(240,95,84,0.5) 40%, rgba(238,96,90,0.5) 100%);
+}
+
+
+.texto_botones{
+    margin-left: 10%;    
+    margin-top: -10%;
+    width: 600px;
+    z-index: 3;
+}
+.texto_botones>div{
+    margin-top: 5%;
+}
+
+.parte_uno_texto_botones{
+    font-size: 2em;
+}
+
+.parte_tres_texto_botones > button{
+    margin-left: 2%;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.parte_tres_texto_botones > button:last-child{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+/* parte abajo */
+.contenido_principal_dos > div{
+    margin-top: 200px;
+    width: 30%;
+    height: 240px;
+    background-color: #1E1E1E;
+}
+
+.contenido_principal_dos > div:last-child{
+    background-color: transparent;
+}
+.contenido_principal_dos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_principal{
+    width: 50px;
+    height: 50px;
+}
+
+.curso{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+h3{
+    color: #75254F;
+}
+
+.curso h3{
+    margin-top: 20%;
+}
+.parte_uno{
+    margin-top: 10px;
+}
+
+.take_look{
+    margin-top: 50%;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.texto_cursos{
+    margin-left: 20px;
+}
+
+.popular > div:nth-child(2){
+    width: 50%;
+}
+.popular > div{
+    margin-top: 5%;
+}
+
+
+/* responsive */
+@media screen and (max-width:767px) {
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    nav div{
+        position: absolute;
+        left: 50%;  
+        z-index: -1;        
+    }
+
+        
+
+    .logo{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        left: -80%;
+    }
+
+    .logo img{
+        margin-top: 4%;
+        width: 150px;
+        height: 40px;
+        z-index: 1;
+    }
+}
+
