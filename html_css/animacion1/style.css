@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.cara{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.ojos{
+    width: 140px;
+    height: 60px;
+    margin-top: 40%;
+    margin-left: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ojos >div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    animation: mover 6s linear 2s infinite;
+}
+
+
+@keyframes mover {
+    0%{
+       width: 60px;
+       height: 60px; 
+    }
+   
+
+    16%, 25%, 40%{
+        height: 90px;
+        border-radius: 40%;
+        transform: translate(40px, 80px);
+    }
+    
+    
+    50%, 60%{
+        height: 80px;
+        border-radius: 40%;
+        transform: translate(70px, -40px);
+    }
+
+
+    70%, 80%, 85%{
+        transform: translate(0px, 0px);
+    }
+
+    85%, 90%{
+        height: 10px;
+    }
+
+    99%,100%{
+        height: 60px;
+    }
+    
+}   

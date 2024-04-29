@@ -14,7 +14,7 @@ body{
 
 header{
     width: 100%;
-    height: 80px;
+    height: 75px;
 }
 
 nav{
@@ -25,8 +25,12 @@ nav{
         
 }
 
+nav > div{
+    margin-top: -0.4%;
+}
+
 .parte_uno_productos{
-    width: 60%;
+    width: 650px;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -34,13 +38,15 @@ nav{
 }
 
 .parte_dos_productos{
-    width: 25%;
+    width: 350px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 10px;
 }
+
+
 
 img{
     width: 100%;
@@ -50,7 +56,6 @@ img{
 .logo{
     width: 150px;
     height: 40px;
-    position: relative;
 }
 
 .todos_productos{
@@ -59,16 +64,19 @@ img{
     background-color: transparent;
     color: white;
     border: none;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .parte_dos_productos .todos_productos:last-child{
     border: 2px solid white;
+    width: 160px;
+    height: 45px;
 }
 
 /* main */
 
 .contenido_principal_uno{
+    overflow: hidden;
     width: 100%;
     height: 500px;
     background: rgb(240,171,32);
@@ -79,34 +87,31 @@ img{
 
 .imagen_grande{
     position: relative;
-    width: 30%;
-    height: 300px;
+    width: 45%;
+    height: 100%;
 }
 
 .imagen_fondo{
     position: absolute;
-    width: 600px;
-    height: 600px;
-    top: -150px;
-    left: 10px;
+    width: 1200px;
+    height: 800px; 
     filter: saturate(1000%);
     z-index: 0;
+    top: -25%;
+    left: -66%;
     
 }
 
 .imagen_frente{
     position: absolute;
-    width: 400px;
-    height: 400px;
-    top: -50px;
-    left: 130px;
+    width: 400%;
+    height: 100%;
     z-index: 1;
-    background: linear-gradient(45deg, rgba(240,171,32,0.5) 1%, rgba(240,95,84,0.5) 40%, rgba(238,96,90,0.5) 100%);
+    background: linear-gradient(45deg, rgba(240,171,32,0.5) 4%, rgba(240,95,84,0.5) 29%, rgba(238,96,90,0.5) 46%, rgba(235,60,85,0.5) 70%);;
 }
 
 
-.texto_botones{
-    margin-left: 10%;    
+.texto_botones{    
     margin-top: -10%;
     width: 600px;
     z-index: 3;
@@ -120,9 +125,10 @@ img{
 }
 
 .parte_tres_texto_botones > button{
+    font-size: 1em;
     margin-left: 2%;
-    width: 200px;
-    height: 50px;
+    width: 230px;
+    height: 60px;
     background-color: black;
     color: white;
     border: none;
@@ -135,18 +141,21 @@ img{
 
 /* parte abajo */
 .contenido_principal_dos > div{
-    margin-top: 200px;
-    width: 30%;
+    margin-top: 100px;
+    width: 360px;
     height: 240px;
     background-color: #1E1E1E;
 }
 
 .contenido_principal_dos > div:last-child{
-    background-color: transparent;
+    background-color:transparent;
+    width: 500px;
 }
 .contenido_principal_dos{
-    display: flex;
-    justify-content: space-around;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 20% 20% 80%;
+    gap: 10%;
 }
 
 .logo_principal{
@@ -191,33 +200,68 @@ h3{
 
 
 /* responsive */
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     nav{
         position: relative;
-        z-index: 1;
+        overflow: hidden;
     }
-
-    nav div{
-        position: absolute;
-        left: 50%;  
-        z-index: -1;        
-    }
-
-        
-
+    
     .logo{
+        left: 0;
         position: absolute;
-        background-color: black;
+        background-color: red;
         width: 100%;
         height: 100%;
-        left: -80%;
+        top: 1%;
+            
     }
-
+    
     .logo img{
-        margin-top: 4%;
+        margin-top: 1%;
+        margin-left: 2%;
         width: 150px;
         height: 40px;
-        z-index: 1;
+    }
+
+    .logo_navegadores{
+        position: absolute;
+        z-index: -1;
+    }
+
+    .icono{
+        z-index: 4;
+        margin-left: 80%;
+    }
+    
+    .parte_uno_texto_botones{
+        width: 500px;
+    }
+
+    .parte_uno_texto_botones{
+        font-size: 24px;
+    }
+
+    .texto_botones{
+        margin-left: -20%;
+    }
+
+   .imagen_fondo{
+        margin-left: -150%;
+   }
+
+    .contenido_principal_dos{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
+@media screen and (max-width: 411px) {
+    .imagen_grande{
+        margin-left: -20%;
+    }
+
+    .imagen_frente{
+        margin-left: 200px;
+    }
+
+}
