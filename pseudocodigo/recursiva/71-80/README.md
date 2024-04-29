@@ -265,13 +265,34 @@
 
 <pre>    
     <code>
-        Funcion Permutaciones(numeros_lista, n_permutaciones)
-
-        FinFuncion
-
-        Algoritmo ejercicio80
-
-        FinAlgoritmo
+        Funcion Permutacion ( vec, x, xy )
+				Si x < xy Entonces
+					para i = x Hasta xy Hacer
+						aux = vec [x]
+						vec[x] = vec[i]
+						vec[i] = aux
+						x = x+1
+						Permutacion(vec , x , xy)
+					FinPara
+				SiNo
+					Para i = 1 Hasta xy Hacer
+						Escribir vec[i] 
+					Fin Para
+				Fin Si
+			Fin Funcion
+			
+			Algoritmo Permutaciones
+				Dimension vec[100]
+				Escribir "Favor ingresar el tamano del vector"
+				Leer n
+				
+				Para i = 1 Hasta n Hacer
+					vec[i] = Azar (1000)
+				FinPara
+				
+				Permutacion(vec ,1 ,n)
+			
+			FinAlgoritmo
     </code>
 </pre>
 
