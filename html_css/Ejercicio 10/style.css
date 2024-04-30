@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, serif;
+}
+
+body{
+    background: radial-gradient(circle at 50% 50%, #131A26 20%, #07090E);
+}
+
+/*  */ 
+
+.container{
+    margin-top: 6%;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #444955;
+    width: 100%;
+
+}
+
+.titulo{
+    font-size: 0.6em;
+}
+
+.puntos1{
+    width: 38%;
+    height: 2px;
+    border-bottom: 5px dotted   #444955;
+}
+
+.flecha1{
+    font-size: 3em;
+}
+
+/*  */
+
+.container_cards{
+    margin-top: 2%;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.container_cards>div{
+    width: 225px;
+    height: 100%;
+    background-color: red;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+
+
+.card1, .card2, .card3, .card4, .card5{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.transparente{
+    background-color: rgba(0, 0, 0, 0.27);
+    height: 100%;
+    
+}
+
+.transparente:hover{
+    background-color: transparent;
+}
+
+.card1, .card3, .card5{
+    background-image: url(img/imagen_don.jpg);
+}
+.card2, .card4{
+    background-image: url(img/2.jpg);
+
+}
+
+.numeros{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(117deg, rgba(255,255,255,1) 6%, rgba(209,21,21,0) 20%, rgba(26,3,3,0) 80%, rgba(255,255,255,1) 96%);
+    color: rgba(0, 0, 0, 0.27);
+    overflow: hidden;
+    font-size: 2.5em;
+    
+}
+
+.numeros p{
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+.imagenes{
+    width: 100%;
+    height: 100%;
+    
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*  */
+
+.container_nums{
+    display: flex;
+    background-color: #333945;
+    width: 500px;
+    height: 50px;
+    margin-top: 2%;
+    justify-content: space-evenly;
+    align-items: center ;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.botones{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.botones > button{
+    background-color: white;
+    color: #6781F7;
+    font-size: 1.3em;
+}
+
+
+
+button:hover{
+    background-color: #6781F7;
+    color: white;
+}
+
+.nums:first-child{
+    background-color: #6781F7;
+    color: white;
+}
+
+.puntitos{
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.flecha_abajo{
+    font-size: 2.3em;
+
+}
+
+.flecha_fondo{
+    padding-bottom: 43px;
+}

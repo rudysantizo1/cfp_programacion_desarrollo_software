@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.ejercicio_3{
+    background-color: blueviolet;
+    width: 450px;
+    height: 600px;
+    margin-left: 30%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: center;
+    background-color:  white;
+    flex-direction: column;
+    width: 300px;
+    height: 550px;
+    justify-content: flex-start;
+}
+
+li{
+    list-style: none;
+}
+
+.sidebar__logo{
+    display: flex;
+    color: rgb(211, 207, 207);
+    font-size: 1.5em;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__nav{
+    font-size: 1.2em;
+}
+
+.sidebar__nav li{
+    padding: 10px 0px 10px 20px;
+    word-spacing: 10px;
+}
+.sidebar__profile{
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sidebar__profile img{
+    background-color:blueviolet;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.fondo_bonito{
+    background-color:  rgba(165, 83, 241, 0.233);
+    color: blueviolet;
+    
+}

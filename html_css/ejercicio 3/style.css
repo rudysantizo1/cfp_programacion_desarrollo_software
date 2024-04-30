@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+}
+
+header img {
+    width: 90px;
+    height: 50px;
+}
+
+.input_parte_uno{
+    margin-top: 10px;
+    width: 40px;
+    height: 35px;
+    border-radius: 0;
+    background-color: rgb(72, 162, 247);
+    border-color: transparent;
+}
+
+#microfono{
+    background-color: transparent;   
+}
+
+label{
+    display: block;
+    margin-top: 1.5%;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}   
+
+div>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.contenedor1{
+    font-size: 1em;
+    text-align: end;    
+    margin: 0;
+    margin-top: 1%;
+}
+
+#campana{
+    background-color: gray;
+    border-radius: 50%;
+}
+
+li{
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    margin-top: -1%;
+    margin-bottom: 0;
+}
+
+nav ul li{
+    margin-left: 2px;
+}
+
+.ajustes_usuario{
+    padding: 2px 10px 2px 10px;
+    border-radius: 0;
+    border-color: rgb(190, 189, 189);
+    margin-top: -6%;
+}
+
+#engranaje{
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+.espaciado>article{
+    margin-top: 10px;
+}
+
+.nav_ultimo ul{
+    margin-top: 10px;
+    display: block;
+    margin-right: 30px;
+}
+
+.nav_ultimo {
+    display: flex;
+}
+
+
+.logo_largo{
+    display: flex;
+}
+
+.logo_largo > p{
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.azul{
+    color: rgb(20, 111, 163);
+}
+
+.amarillo{
+    color: rgb(221, 205, 56);
+}
+
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+
+footer div{
+    margin-top: 20px;
+}
+
+.ultimo_contenedor{
+    width: 250px;
+}
+
+#flecha{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+.parte_abajo{
+    display: flex;
+    flex-direction: row;
+}
+
+ul:last-child{
+    margin-left: 2%;
+}

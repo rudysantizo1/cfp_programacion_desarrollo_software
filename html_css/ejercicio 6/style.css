@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+li{
+    
+    list-style: none;
+}
+
+header{
+    margin-top: 2%;
+    text-align: center;
+    color: cadetblue;
+}
+
+main h2{
+    color: cadetblue;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    gap: 0px 20px;
+    margin-top: 2%;
+    margin-left: 13%;
+}
+
+.hijo1{
+    width: 1000px;
+    margin-left:-13%;
+}
+
+.hijo1 h2{
+    margin-left: 10%;
+}
+
+.hijo1 ul{
+    margin-left: 10%;
+}
+
+.hijo2 ul{
+    display: flex;
+}
+
+.contenido_libro{
+    margin-top: 2%;
+}
+
+.hijo2 li{
+    margin-top: 2%;
+    list-style: none;
+    width: 242px;
+    text-align: justify;
+}
+
+.hijo2 p{
+    margin-top: 2%;
+}
+
+.lista{
+    margin-left: 2%;
+}

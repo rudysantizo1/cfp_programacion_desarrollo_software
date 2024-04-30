@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background-color: rgb(189, 224, 226);
+}
+
+header {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(111, 155, 144) ;
+}
+
+
+h1, p{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+h1{
+    margin-top: 5%;
+}
+
+nav {
+    border: 2px solid rgb(113, 162, 165);
+    background-color: rgb(113, 162, 165);
+    width: 210px;
+    height: 180px;
+    margin-left: 4%;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+
+ul {
+    margin-left: 10%;
+    
+}
+
+ul, a, nav li, nav p{
+    background-color: transparent;
+}
+
+nav li {
+    margin-top: 5%;
+}
+
+ol{
+    margin-left: 7%;
+    font-size: 2em;
+    
+}
+
+
+ol li{
+    list-style:   decimal;
+}

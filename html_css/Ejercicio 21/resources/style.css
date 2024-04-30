@@ -58,6 +58,7 @@ img{
     height: 40px;
 }
 
+
 .todos_productos{
     font-weight: bolder;
     padding: 12px 12px 12px 12px;
@@ -71,6 +72,15 @@ img{
     border: 2px solid white;
     width: 160px;
     height: 45px;
+}
+
+.icono, .menucito{
+    font-size: 1.2em;
+}
+
+.menucito{
+    position: absolute;
+    color: transparent;
 }
 
 /* main */
@@ -98,7 +108,7 @@ img{
     filter: saturate(1000%);
     z-index: 0;
     top: -25%;
-    left: -66%;
+    left: -400px;
     
 }
 
@@ -228,10 +238,12 @@ h3{
         z-index: -1;
     }
 
-    .icono{
+    .icono, .menucito{
         z-index: 4;
-        margin-left: 80%;
+        color: white;
+        left: 50%;
     }
+
     
     .parte_uno_texto_botones{
         width: 500px;
@@ -245,10 +257,6 @@ h3{
         margin-left: -20%;
     }
 
-   .imagen_fondo{
-        margin-left: -150%;
-   }
-
     .contenido_principal_dos{
         display: flex;
         flex-direction: column-reverse;
@@ -256,7 +264,7 @@ h3{
 }
 
 @media screen and (max-width: 411px) {
-    .imagen_grande{
+    .imagen_grande{ 
         margin-left: -20%;
     }
 

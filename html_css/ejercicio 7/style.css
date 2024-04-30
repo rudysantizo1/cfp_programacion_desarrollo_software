@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(53, 177, 226, 0.87);
+}
+
+.list-wrapper{
+    background-color: white;
+    width: 400px;
+    height: 430px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.list-item{
+    border-top: 2px solid gray;
+    display: flex;
+    align-items: center;
+    height: 104px;
+}
+
+.list-item > div{
+    margin-left: 2%;
+}
+
+.list-item__image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(216, 7, 77, 0.822);
+}
+
+.list p{
+    margin-top: 3%;
+    color: gray;
+}

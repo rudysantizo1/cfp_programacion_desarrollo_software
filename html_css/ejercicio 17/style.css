@@ -1,0 +1,26 @@
+
+body{
+    overflow-x: hidden;
+}
+
+.padre1{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+}
+
+.padre2{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin-top: 100%;
+}
+
+
+.padre1:hover{
+    background-color: green;
+}
+
+.padre2:hover{
+    background-color: yellowgreen;
+}

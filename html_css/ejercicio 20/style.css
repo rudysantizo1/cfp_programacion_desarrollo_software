@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+fieldset{
+    width: 300px;
+    height: 300px;
+    margin-left: 30%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+legend{
+    text-align: center;
+}
+
+label{
+    margin-top: 5%;
+}
+
+input{
+    background-color: green;
+}
+
+label{
+    background-color: red;
+}
+
+form{
+    background-color: aqua;
+}

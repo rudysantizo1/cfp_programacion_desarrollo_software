@@ -1,0 +1,12 @@
+.padre{
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+
+    border-radius: 2%;
+    
+    border-top: 20px solid black;
+    border-left: 30px double red;
+    border-right: 40px ridge yellow;
+    border-bottom: 50px groove blue;
+}

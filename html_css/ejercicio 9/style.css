@@ -1,0 +1,177 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: burlywood;
+}
+
+
+
+/* Ejercicio1 */
+
+.contenedor1{
+    background-color: burlywood;
+    margin-left: 25%;
+    width: 70%;
+    margin-right: 5%;
+}
+header{
+    margin-top: 5%;
+    text-align: center;
+    color: cadetblue;
+}
+
+main h2{
+    color: cadetblue;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    gap: 0px 20px;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.hijo1{
+    width: 1000px;
+    margin-left:-13%;
+    margin-top: 23%;
+}
+
+.hijo1
+ h2{
+    margin-left: 10%;
+}
+
+.hijo1 ul{
+    margin-left: 10%;
+}
+
+.hijo2 ul{
+    display: flex;
+}
+
+.contenido_libro{
+    margin-top: 2%;
+}
+
+.hijo2 li{
+    margin-top: 2%;
+    list-style: none;
+    width: 242px;
+    text-align: justify;
+}
+
+.hijo2 p{
+    margin-top: 2%;
+}
+
+.lista{
+    margin-left: 2%;
+}
+
+/* ejercicio 2 */
+
+
+
+.list-wrapper{
+    background-color:burlywood;
+    width: 100%;
+    height: 100px;
+    margin-top: 12%;
+}
+
+.list-item{
+    height: 104px;
+    float: left;
+    display: flex;
+    margin-left: 7%;
+}
+
+.list-item > div{
+    margin-left: 2%;
+}
+
+.list-item__image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:cadetblue;
+}
+
+.list p{
+    margin-top: 3%;
+    color: gray;
+}
+
+
+/* ejercicio 3 */
+
+.contenedor3{
+    background-color: transparent;
+    position: relative;
+    margin-top: -79%;
+
+}
+
+
+.sidebar{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    flex-direction: column;
+    width: 200px;
+    height: 450px;
+    justify-content: flex-start;
+    height: 800px;
+}
+
+li{
+    list-style: none;
+}
+
+.sidebar__logo{
+    display: flex;
+    color: rgb(211, 207, 207);
+    font-size: 1.5em;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__nav{
+    font-size: 1.2em;
+}
+
+.sidebar__nav li{
+    padding: 10px 0px 10px 20px;
+    word-spacing: 10px;
+}
+.sidebar__profile{
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sidebar__profile img{
+    background-color:rgba(173, 148, 109, 0.555);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.fondo_bonito{
+    background-color:  rgb(5, 128, 133);
+    color:rgba(173, 148, 109, 0.555);
+    
+}
+
+

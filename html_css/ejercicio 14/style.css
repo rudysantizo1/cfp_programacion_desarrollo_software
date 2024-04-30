@@ -1,0 +1,39 @@
+nav{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: Arial, italic;
+}
+
+p{
+    margin: 0;
+}
+
+.parte_arriba{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.parte_abajo{     
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+
+
+ul{
+    height: 306px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5em;
+}

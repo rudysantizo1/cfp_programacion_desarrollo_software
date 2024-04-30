@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="dpi">DPI</label>
+            <input type="number" name="dpi" id="dpi">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name_user">
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+            <label for="correo">Correo Electronico</label>
+            <input type="email" name="correo" id="correo">
+            <label for="genero">Genero</label>
+            <div class="generos">
+                <input type="radio" name="genero" id="Masculino">Masculino
+                <input type="radio" name="genero" id="Femenino">Femenino
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Ubicacion</legend>
+
+            <label for="direction">Direccion</label>
+            <input type="text" name="direction" id="direction">
+            <label for="zona">Zona</label>
+            <input type="text" name="zone" id="zone">
+            <label for="avenide">Avenida</label>
+            <input type="text" name="avenida" id="">
+            <label for="calle">Calle</label>
+            <input type="number" name="street" id="street">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos extras</legend>
+
+            <label for="vehiculo">Llevas vehiculo?</label>
+            <select name="vehicle" id="vehicle">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="trabajo">Trabajas actualmente?</label>
+            <select name="trabajo" id="work">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="estado">Estado Civil</label>
+            <select name="estado" id="estado">
+                <option value="soltero">Soltero</option>
+                <option value="noviazgo">Noviazgo</option>
+                <option value="casado">Casado</option>
+                <option value="viudo">Viudo</option>
+                <option value="divorciado">Divorciado</option>
+                
+            </select>
+
+            <button type="submit">Subir Datos</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
