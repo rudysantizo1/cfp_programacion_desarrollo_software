@@ -3,13 +3,55 @@
     padding: 0;
 }
 
-aside{
-    width: 100%;
+/* vetana emergente */
+.vetnana_emergente{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 400px;
+    height: 190px;
+    display: flex;
+    font-size: 0.9em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 21px 0px rgba(92,92,92,1);
+
+}
+
+.vetnana_emergente .contenido{
+    width: 250px;
+}
+
+.vetnana_emergente h2{
+    margin-top: 20px;
+}
+
+.vetnana_emergente i{
+    font-size: 4em;
+    color: #23056E;
+}
+
+.vetnana_emergente .icono{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.vetnana_emergente a{
+    color: #23006B;
+}
+
+.vetnana_emergente p{
+    margin-top: 10px;
+}
+
+/* parte arriba con la publicidad */
+
+aside{  
     height: 30px;
     background-color: #EBE1F5;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 a{
@@ -18,11 +60,11 @@ a{
 
 header{
     font-size: 1.1em;
-    background-color: green;
     width: 100%;
     height: 120px;
     padding-left: 25px;
 }
+
 
 img{
     width: 100%;
@@ -30,21 +72,18 @@ img{
 }
 
 .logo{
+    margin-top:10px;
     width: 150px;
-    height: 100%;
+    height: 80%;
 }
 
 .arriba{
     width: 100%;
-    background-color: red;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
 }
 
-.vetnana_emergente{
-    display: none;
-}
 
 .lista_arriba{
     display: flex;
@@ -79,7 +118,6 @@ img{
 }
 
 .navegaciones{
-    background-color: yellow;
     height: 60px;
     display: flex;
     align-items: center;
@@ -108,9 +146,210 @@ img{
 .navegaciones li:nth-child(3) i{
     background-color: #23006B;
     color: white;
+    font-weight: bolder;
 }
 
 .navegaciones li:nth-child(3){
     color: #23006B;
-    font-weight: bolder;
+    border-bottom: 2px solid #23006B;
+}
+
+
+main{
+    margin-top: 20px;
+    background-color: #DCD2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    color: white;
+    background-color: #23056E;
+    width: 85%;
+    height: 90%;
+    flex-wrap: wrap;   
+}
+
+fieldset{
+    margin-left: 20px;
+    border: none;
+}
+
+fieldset:first-child{
+    margin-top: 25px;
+}
+
+fieldset:first-child p{
+    margin-top: 5px;
+}
+
+fieldset:nth-child(2){
+    margin-top: 15px;
+}
+
+fieldset:nth-child(2) label{
+    margin-left: 6px;
+}
+
+fieldset:nth-child(2) input{
+    margin-left: 3px;
+}
+
+fieldset:nth-child(3){
+    margin-top: 15px;   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primera_parte{
+    display: flex;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+}
+
+.primera_parte label{
+    color: white;
+    font-size: 0.7em;
+}
+
+.primera_parte input{
+    padding-left: 15px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.primera_parte input:focus{
+    background-color: transparent;
+}
+
+
+.primera_parte .contenedor{
+    margin-top: 5px;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.primera_parte div{
+    color: #666666;
+}
+
+.primera_parte .destino .contenedor{
+    margin-left: 2px;
+}
+
+
+
+/* segunfa */
+
+.segunda_parte{
+    color: white;
+    margin-left: 10px;
+}
+
+.segunda_parte .fechas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.fechas input{
+    margin-top: 2px;
+    padding: 15px 15px 15px 10px;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.contenedor_fechas_vueltas{
+    margin-left: 2px;
+}
+
+.checkeobox{
+    margin-top: 10px;
+}
+
+/* tercerosadadsdawsdsa */
+
+.pasajeros_clase{
+    margin-left: 10px;
+}
+
+.pasajeros_clase .contenedor{
+    margin-top: 5px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasajeros_clase .contenedor{
+    color: #666666;
+}
+
+.pasajeros_clase .contenedor input{
+    border-color: transparent;
+    margin-left: 5x;
+}
+
+/* button */
+
+.buscar{
+    height: 100px;
+    display: flex;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar button{
+    display: flex;
+    width: 110px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #F74F45;
+    color: white;
+    font-size: 0.9em;
+    border-color: transparent;
+}
+
+
+/* griddy griddy */
+
+section{
+    background-color: rebeccapurple;
+}
+
+section > div{
+    background-color: red;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.principal{
+    background-color: yellow;
+    margin-top: 5%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    gap: 200px;
+}
+
+section > div:last-child > div{
+    background-color: purple;
+    width: 300px;
+    height: 400px;
 }
