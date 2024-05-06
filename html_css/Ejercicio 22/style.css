@@ -62,7 +62,7 @@ header{
     font-size: 1.1em;
     width: 100%;
     height: 120px;
-    padding-left: 25px;
+    
 }
 
 
@@ -75,6 +75,10 @@ img{
     margin-top:10px;
     width: 150px;
     height: 80%;
+}
+
+.logo, .navegaciones{
+    margin-left: 30px;
 }
 
 .arriba{
@@ -109,11 +113,9 @@ img{
 }
 
 .cuentas_derecha{
- 
+    margin: 0;
     color: #656565;
     background-color: #F0F0F0;
-    width: 30%;
-    height: 100%;
     border-bottom-left-radius: 15px;
 }
 
@@ -125,13 +127,17 @@ img{
 }
 
 .navegaciones ul{
-    list-style: none;
-    display: flex;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+
 }
 
 .navegaciones li{
     margin-right: 20px;
     text-align: center;
+    list-style: none;
 }
 
 .navegaciones i{
@@ -154,6 +160,7 @@ img{
     border-bottom: 2px solid #23006B;
 }
 
+/* parte abajo */
 
 main{
     margin-top: 20px;
@@ -169,6 +176,9 @@ form{
     width: 85%;
     height: 90%;
     flex-wrap: wrap;   
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px;
 }
 
 fieldset{
@@ -344,7 +354,7 @@ section > div{
     margin-top: 5%;
     margin-right: 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 section > div:last-child > div{
@@ -355,7 +365,11 @@ section > div:last-child > div{
 
 
 @media screen and (max-width: 768px) {
-    .cuentas_derecha p{
+    .vetnana_emergente{
+        display: none;
+    }
+
+    .cuentas_derecha li>p{
         display: none;
     }
 }
