@@ -112,7 +112,7 @@ img{
  
     color: #656565;
     background-color: #F0F0F0;
-    width: 55vh;
+    width: 30%;
     height: 100%;
     border-bottom-left-radius: 15px;
 }
@@ -344,12 +344,18 @@ section > div{
     margin-top: 5%;
     margin-right: 10%;
     display: grid;
-    grid-template-columns: 10% 10% 10% 10%;
-    gap: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 section > div:last-child > div{
     background-color: purple;
-    width: 300px;
+    width: 90%;
     height: 400px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cuentas_derecha p{
+        display: none;
+    }
 }
