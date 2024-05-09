@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background-color: red;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+    height: 35px;
+}
+
+
+nav{
+    height: 100%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+}
+
+
+nav:first-child{
+    margin-left: 20px;
+    gap: 50px;
+}
+
+nav:last-child{
+    width: 320px;
+}
+
+
+nav ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+
+}
+
+nav select, nav button, nav i{
+    font-size: 0.9em;
+}

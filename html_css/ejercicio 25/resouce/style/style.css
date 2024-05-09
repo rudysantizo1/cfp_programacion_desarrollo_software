@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(124,140,163,1) 36%, rgba(123,139,164,1) 100%);
+}
+
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: black;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_principal{
+    display: flex;
+    gap: 20px;
+}
+
+.logo_teatro{
+    width: 150px;
+    background-color:#C91820;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.informacion_header{
+    width: 500px;
+    display: flex;
+    gap: 20px;
+   align-items: center;
+}
+
+.logo{
+    width: 92%;
+    height: 200px;
+}
+
+
+.header_principal i{
+    width: 50px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+nav{
+    width: 170px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+nav .enlances{
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+nav a:nth-child(1){
+    background-color: #1BA6C7;
+}
+
+nav a:nth-child(2){
+    background-color: #48629D;
+}
+
+nav a:nth-child(3){
+    background-color: #425F6F;
+}
+
+nav a:last-child{
+    background-color: #841E29;
+}
+
+/* main */
+
+main{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    height: 580px;
+}
+
+.contenedor_izquierdo{
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 20px;
+}
+.contenedor_tickets, .contenedor_izquierdo > div:nth-child(2), .contenedor_izquierdo > div:last-child>div:last-child ul{
+    display: flex;
+}
+
+/* primer contenedor izquierdo */
+
+.contenedor_izquierdo > div:first-child{
+    background-color: yellow;
+    height: 90px;
+    width: 100%;
+}
+
+.contenedor_input{
+    display: flex;
+    align-items: center;
+    height: 38px;
+    border: 2px solid white;
+    width: 200px;
+}
+
+.contenedor_izquierdo > div:first-child p{
+    font-size: 1.3em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contenedor_input input{
+    width: 80%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+.contenedor_tickets{
+    height: 40px;
+}
+
+.contenedor_tickets button{
+    width: 50px;
+    background-color: white;
+    border: none;
+}
+
+/* segundo contenedor izquierdo */
+
+.contenedor_izquierdo > div:nth-child(2){
+    background-color: yellowgreen;
+    height: 60px;
+}
+
+.contador{
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+}
+
+.contador p:last-child{
+    height: 30px;
+    align-content: center;
+    border: 2px solid white;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.contador:nth-child(1) p:last-child, .contador:nth-child(2) p:last-child, .contador:nth-child(3) p:last-child{
+    border-right: none;
+}
+

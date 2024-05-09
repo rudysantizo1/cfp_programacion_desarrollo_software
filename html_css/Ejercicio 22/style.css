@@ -127,10 +127,11 @@ img{
 }
 
 .navegaciones ul{
+    overflow: hidden;
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(9,100px);
 
 }
 
@@ -173,7 +174,7 @@ main{
 form{
     color: white;
     background-color: #23056E;
-    width: 85%;
+    width: 88%;
     height: 90%;
     flex-wrap: wrap;   
     margin-top: 2%;
@@ -212,11 +213,16 @@ fieldset:nth-child(3){
     flex-wrap: wrap;
 }
 
+fieldset:nth-child(3) > div{
+    margin-left: 10px;
+}
+
 .primera_parte{
     display: flex;
     font-size: 1.2em;
-    flex-wrap: wrap;
 }
+
+
 
 .primera_parte label{
     color: white;
@@ -237,7 +243,7 @@ fieldset:nth-child(3){
 
 .primera_parte .contenedor{
     margin-top: 5px;
-    width: 250px;
+    width: 100%;
     height: 50px;
     background-color: white;
     border-radius: 5px;
@@ -261,7 +267,6 @@ fieldset:nth-child(3){
 
 .segunda_parte{
     color: white;
-    margin-left: 10px;
 }
 
 .segunda_parte .fechas{
@@ -289,7 +294,6 @@ fieldset:nth-child(3){
 /* tercerosadadsdawsdsa */
 
 .pasajeros_clase{
-    margin-left: 10px;
 }
 
 .pasajeros_clase .contenedor{
@@ -318,7 +322,7 @@ fieldset:nth-child(3){
 .buscar{
     height: 100px;
     display: flex;
-    margin-left: 15px;
+    
     justify-content: center;
     align-items: center;
 }
@@ -363,6 +367,21 @@ section > div:last-child > div{
     height: 400px;
 }
 
+fieldset:last-child{
+    width: 100%;
+}
+.discapacidad{
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1181px){
+    .buscar{
+       position: relative;
+       left: 70%;
+    } 
+    
+}
 
 @media screen and (max-width: 768px) {
     .vetnana_emergente{
@@ -371,5 +390,20 @@ section > div:last-child > div{
 
     .cuentas_derecha li>p{
         display: none;
+    }
+
+    .primera_parte {
+        width: 100%;
+    }
+
+    .origen, .destino{
+        width:100%;
+    }
+
+    .buscar{
+        margin-top: 20%;
+    }
+    .segunda_parte{
+        margin-left: 0;
     }
 }
