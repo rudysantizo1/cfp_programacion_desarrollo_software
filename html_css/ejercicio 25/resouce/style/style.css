@@ -546,7 +546,14 @@ footer select{
     display: none;
 }
 
+.informacion_header{
+    display: none;
+}
+
 /* modificaciones */
+main{
+    gap: 20px;
+}
 .contenedor_izquierdo{
     justify-content: flex-end;
     height: 300px;
@@ -554,15 +561,15 @@ footer select{
 
 .contenedor_central_dos{
     width: 120vh;
-    height: 75.4vh;
+    height: 78vh;
     display: flex;
-    border: 2px solid red;
 }
 
 .contenedor_dos_imagen{
     position: relative;
     width: 500px;
     height: 500px;
+
 }
 
 .contenedor_dos_imagen img{
@@ -574,3 +581,41 @@ footer select{
     top: -16%;
 }
 
+.contenedor_informacion_lemon{
+    display: grid;
+    align-self: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.fondo_color{
+    width: 70vh;
+    height: 300vh;
+    position: absolute;
+    background-color: #B64A6D;
+    z-index: -1;
+    transform: rotate(-47deg);
+    left: 40%;
+    top: -80%;
+}
+
+.lista ul li{
+    display: flex;
+    gap: 15px;
+}
+
+.informacion{
+
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.informacion p{
+    position: absolute;
+}
+
+.iconos_imagen_lemon ul{
+    justify-content: flex-start;
+    gap: 25px;
+}
