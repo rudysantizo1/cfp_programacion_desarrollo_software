@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -38,7 +39,7 @@ header{
 }
 
 .logo_teatro{
-    width: 135px;
+    width: 125px;
     background-color:#C91820;
     height: 300px;
     display: flex;
@@ -406,9 +407,7 @@ main{
     margin-right: 50px;
 }
 
-.iconos_imagen > ul > li > img{
-    filter: invert(1);
-}
+
 
 /* contenedor derecho */
 
@@ -595,7 +594,8 @@ main{
     width: 72vh;
     height: 300vh;
     position: absolute;
-    background-color: #B64A6D;
+    background: rgb(182,74,109);
+background: linear-gradient(36deg, rgba(182,74,109,1) 32%, rgba(241,221,228,1) 48%, rgba(182,74,109,1) 71%);
     z-index: -1;
     transform: rotate(-50deg);
     left: 40%;
@@ -622,4 +622,9 @@ main{
 .iconos_imagen_lemon ul{
     justify-content: flex-start;
     gap: 25px;
+}
+
+
+.iconos_imagen_lemon li{
+    background-color: red;
 }
