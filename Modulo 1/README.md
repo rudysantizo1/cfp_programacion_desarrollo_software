@@ -8,7 +8,7 @@
 
 ## [Para](pseudocodigo/para/)
 
-## [Vectores](/pseudocodigo/vectores/)
+## [Vectores](/pseudocodigo/Vectores/)
 
 ## [Matrices](pseudocodigo/matrices/)
 
