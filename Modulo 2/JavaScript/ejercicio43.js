@@ -3,11 +3,8 @@ function getRandomArbitrary(min, max) {
 }
 
 let array = [];
-let suma = 0;
 
 for (let i = 0; i < 10; i++) {
     array[i] = getRandomArbitrary(1,100);
-    suma += array[i];
 }
-
-console.log(`El promedio de las notas es: ${suma/10}`);
+console.log(`El promedio de las notas es: ${array.reduce(( a, b ) => a+b,0) / 10}`);

@@ -3,13 +3,11 @@ function getRandomArbitrary(min, max) {
 }
 
 let array = [];
-let suma = 0;
 
 for (let i = 0; i < 5; i++) {
     array[i] = getRandomArbitrary(1,100);
-    suma += array[i];
 }
-
-console.log(suma, array);
+console.log(array);
+console.log(array.reduce(( a, b ) => a+b,0));
 
 
