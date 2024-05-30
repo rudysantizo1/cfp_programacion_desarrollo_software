@@ -1,5 +1,5 @@
 let caracteres = ['a', 'b', 'c', 'd', 'e', 'f','g']
 let caracterBuscar = 'z';
 
-console.log(`el numero se encontro en la posicion: ${caracteres.indexOf(caracterBuscar)}`);
+console.log(`La letra ${caracteres.indexOf(caracterBuscar)>=0 ? "se encontro" : "no se encontro"} en el arreglo`);
 
