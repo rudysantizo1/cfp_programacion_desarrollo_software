@@ -1,117 +1,73 @@
 function validarColumna(num, f, sudoku) {
-    for (let vc = 1; vc < 9; vc++) {
-        if (num == sudoku[f, vc]) {
+    for (let vc = 0; vc < 9; vc++) {
+        if (num === sudoku[f][vc]) {
             return true;
         }
-
     }
     return false;
-
 }
-
 
 function validarFila(num, c, sudoku) {
-    for (let vf = 1; vf < 9; vf++) {
-        if (num == sudoku[c, vf]) {
+    for (let vf = 0; vf < 9; vf++) {
+        if (num === sudoku[vf][c]) {
             return true;
         }
     }
     return false;
 }
 
-
 function validarBloque(num, f, c, sudoku) {
-    //Revision de fila
-    if (f >= 0 && f <= 2) {
-        inicioFila = 0;
-    }
+    const inicioFila = Math.floor(f / 3) * 3;
+    const inicioColumna = Math.floor(c / 3) * 3;
 
-    else if (f >= 3 && f <= 5) {
-        inicioFila = 3;
-    }
-
-    else {
-        inicioFila = 6;
-    }
-    //Revision de columna
-    if (c >= 0 && c <= 2) {
-        inicioColumna = 0;
-    }
-
-    else if (c >= 3 && c <= 5) {
-        inicioColumna = 3;
-    }
-
-    else {
-        inicioColumna = 6;
-    }
-
-
-    for (let i = inicioFila; i < inicioFila + 2; i++) {
-        for (let j = inicioColumna; j < inicioColumna + 2; j++) {
-
-            if (num == sudoku[i][j]) {
-                existe = true;
-                break;
+    for (let i = inicioFila; i < inicioFila + 3; i++) {
+        for (let j = inicioColumna; j < inicioColumna + 3; j++) {
+            if (num === sudoku[i][j]) {
+                return true;
             }
         }
-
     }
+    return false;
 }
 
-
-function imprimirSudoku(sudoku) {
-    console.log(sudoku);
-}
-
-
-function main() {
-    let num, contador, filas, columnas, error, existe;
-    let sudoku = [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    ];
-
-   
-
+function resolverSudoku(sudoku) {
     for (let f = 0; f < 9; f++) {
         for (let c = 0; c < 9; c++) {
-            for (num = 0; num < 9; num++) {
-                existe = false;
-
-                do {
-                    existe = validarColumna(num, f, sudoku);
-
-                    if (existe == false) {
-                        existe = validarFila(num, c, sudoku);
-
-                        if (existe == false) {
-                            existe = validarBloque(num, f, c, sudoku);
+            if (sudoku[f][c] === 0) {
+                for (let num = 1; num <= 9; num++) {
+                    if (!validarColumna(num, f, sudoku) && !validarFila(num, c, sudoku) && !validarBloque(num, f, c, sudoku)) {
+                        sudoku[f][c] = num;
+                        if (resolverSudoku(sudoku)) {
+                            return true;
                         }
+                        sudoku[f][c] = 0;
                     }
-                    if (existe == false) {
-                        sudoku[f][c] = num
-                        num = 9
-                    }
-
-                } while (existe == true);
+                }
+                return false;
             }
-
-            
-
-
         }
-
     }
-
-    imprimirSudoku(sudoku);
+    return true;
 }
 
-main();
+// Ejemplo de uso:
+const sudoku = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+
+
+];
+
+if (resolverSudoku(sudoku)) {
+    console.log("Solución encontrada:");
+    console.log(sudoku);
+} else {
+    console.log("No se pudo encontrar una solución válida.");
+}

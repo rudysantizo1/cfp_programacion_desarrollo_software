@@ -19,3 +19,4 @@ for (let i = 0; i < 4; i++) {
     }
     console.log(`${matriz[i]}     ${matrizRotado[i]}    ${matrizRotadoAbajo[i]}     ${matrizRotadoIzquierda[i]}`);    
 }
+matrizRotado
