@@ -98,3 +98,30 @@ SELECT productos.id,productos.nombre, categorias.nombre FROM
 ORDER BY categorias.id;
 
 --Total gastado por cada cliente
+SELECT clientes.nombre, SUM(productos.precio * detalle_pedido.cantidad) FROM
+detalle_pedido JOIN pedidos ON detalle_pedido.pedido_id = pedidos.id
+JOIN clientes ON pedidos.cliente_id = clientes.id 
+JOIN productos ON detalle_pedido.producto_id = productos.id
+GROUP BY clientes.nombre;
+
+--Producto mas vendido
+SELECT productos.nombre, detalle_pedido.cantidad FROM detalle_pedido 
+JOIN productos ON detalle_pedido.producto_id = productos.id
+WHERE detalle_pedido.cantidad = (SELECT MAX(cantidad) FROM detalle_pedido);
+
+
+--RESUMEN DE PEDIDOS
+SELECT pedidos.id, clientes.nombre, productos.nombre as producto, productos.precio, 
+    detalle_pedido.cantidad, (productos.precio * detalle_pedido.cantidad) as total
+FROM detalle_pedido JOIN pedidos ON detalle_pedido.pedido_id = pedidos.id
+JOIN clientes ON pedidos.cliente_id = clientes.id 
+JOIN productos ON detalle_pedido.producto_id = productos.id
+ORDER BY pedidos.id; 
+
+--INSERTAR COSAS
+INSERT INTO pedidos VALUES(7, 4);
+INSERT INTO detalle_pedido VALUES(7,19,20);
+
+UPDATE productos
+SET stock = stock - 20
+WHERE id = 19;

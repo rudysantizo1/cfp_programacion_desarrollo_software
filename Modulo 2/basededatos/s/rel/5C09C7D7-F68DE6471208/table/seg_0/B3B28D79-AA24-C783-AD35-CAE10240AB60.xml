@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3B28D79-AA24-C783-AD35-CAE10240AB60" schemaObject="24EFD663-7BE6-F07A-BE8E-8FBA3A78FFDE" name="CLIENTES">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>CLIENTES</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="712D0FD8-7193-6DB8-CBBA-108F3BBD6FD2">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="8B9716CF-9EB6-E72C-7C23-71FEC60216A3">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61D268EC-5B43-61F7-5E79-2CC21F2AE1E8" schemaObject="24EFD663-7BE6-F07A-BE8E-8FBA3A78FFDE" name="CLIENTES_PK">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008393</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="712D0FD8-7193-6DB8-CBBA-108F3BBD6FD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

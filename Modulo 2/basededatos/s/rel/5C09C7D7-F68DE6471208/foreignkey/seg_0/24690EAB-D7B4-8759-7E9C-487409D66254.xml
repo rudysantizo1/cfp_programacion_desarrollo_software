@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="24690EAB-D7B4-8759-7E9C-487409D66254" containerWithKeyObject="7A36186F-3273-8323-561D-23B37A48439A" localFKIndex="7DE5941A-7AF7-0999-650F-BB6A5CBE70AA" name="SYS_C008398">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008398</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:56 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<referredTableLongName>SYSTEM.PEDIDOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6C3C5024-5E04-ED32-D552-5DBEB9E6C08F</referredTableID>
+<keyObject>21B4EDF1-C514-70FF-C6C5-75E29B38FBF3</keyObject>
+<referredKeyID>21B4EDF1-C514-70FF-C6C5-75E29B38FBF3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

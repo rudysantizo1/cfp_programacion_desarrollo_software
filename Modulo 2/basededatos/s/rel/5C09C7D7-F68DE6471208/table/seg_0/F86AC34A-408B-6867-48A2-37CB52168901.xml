@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F86AC34A-408B-6867-48A2-37CB52168901" schemaObject="24EFD663-7BE6-F07A-BE8E-8FBA3A78FFDE" name="PRODUCTOS">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRODUCTOS</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="EB2897ED-05A7-19B0-EA0C-D15D53BCBDEB">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="4B1E8924-F1F6-5EF6-783F-4D94BBB44846">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO" id="C21D688D-C510-0F1A-EECE-EE680632AA9E">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>PRECIO</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK" id="BD391035-86DA-527F-D4E4-B8F4208682AD">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>STOCK</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORIA_ID" id="58556937-944B-6C5D-5C02-1A60ECF98C69">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>CATEGORIA_ID</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE66DD6D-AA91-5200-51B9-1189596FDFF3" referredColumn="2A19E6BD-47B0-DFFA-7556-70C021DBDEDC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAB74753-6529-43DD-2FD1-573EEE34ECA4" schemaObject="24EFD663-7BE6-F07A-BE8E-8FBA3A78FFDE" name="PRODUCTOS_PK">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008391</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB2897ED-05A7-19B0-EA0C-D15D53BCBDEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B488C573-AE4D-46F9-4829-76EDB777265A" name="SYS_C008392">
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:56 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58556937-944B-6C5D-5C02-1A60ECF98C69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

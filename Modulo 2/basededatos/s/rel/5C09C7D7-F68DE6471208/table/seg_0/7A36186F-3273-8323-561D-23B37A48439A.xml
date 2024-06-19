@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A36186F-3273-8323-561D-23B37A48439A" schemaObject="24EFD663-7BE6-F07A-BE8E-8FBA3A78FFDE" name="DETALLE_PEDIDO">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>DETALLE_PEDIDO</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PEDIDO_ID" id="59739ACA-7900-73BC-2F49-8D7AC69331FC">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>DETALLE_PEDIDO</sourceObjSchema>
+<sourceObjName>PEDIDO_ID</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24690EAB-D7B4-8759-7E9C-487409D66254" referredColumn="890682AC-4AE9-32BA-56BC-CB1DA67D6AE0"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_ID" id="72811D8D-70DB-8CBD-6A77-262778D67838">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>DETALLE_PEDIDO</sourceObjSchema>
+<sourceObjName>PRODUCTO_ID</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F770A273-02B4-722E-8E47-07BC6323687D" referredColumn="EB2897ED-05A7-19B0-EA0C-D15D53BCBDEB"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="C38A6D76-EBE0-F21B-159D-933C12E1739A">
+<sourceConnName>CFP_BaseDatos</sourceConnName>
+<sourceObjSchema>DETALLE_PEDIDO</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:55 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7DE5941A-7AF7-0999-650F-BB6A5CBE70AA" name="SYS_C008398">
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:56 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59739ACA-7900-73BC-2F49-8D7AC69331FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F00BD4E0-C914-8572-9176-2233FB185B21" name="SYS_C008399">
+<createdBy>rudysantizo</createdBy>
+<createdTime>2024-06-19 14:57:56 UTC</createdTime>
+<ownerDesignName>s</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72811D8D-70DB-8CBD-6A77-262778D67838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
