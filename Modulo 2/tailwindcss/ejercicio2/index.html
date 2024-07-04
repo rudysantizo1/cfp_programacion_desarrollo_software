@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>empleados</title>
+</head>
+
+<body class="bg-gray-200 tracking-tighter">
+    <div class="w-full h-full flex flex-col justify-center items-center mt-10 gap-y-6 font-semibold">
+        <div class="w-full pl-24">
+            <h1 class="text-2xl">Employees (7)</h1>
+        </div>
+        <table class="font-medium divide-y-8">
+            <thead class="">
+                <tr class="text-left">
+                    <th class="w-12 pl-3"><i class="bi bi-circle"></i></th>
+                    <th class="w-60 text-sm text-gray-500">NAME</th>
+                    <th class="w-40 text-sm text-gray-500">POLICY</th>
+                    <th class="w-52 text-sm text-gray-500">POLICY STATUS</th>
+                    <th class="w-36 text-sm text-gray-500">DESTINATION</th>
+                    <th class="w-28 text-sm text-gray-500">STATUS</th>
+                    <th class="w-32 text-sm text-gray-500">PROGRESS</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody class="gap-y-5 bg-white mt-2 divide-y-4">
+                <!-- 1 -->
+                <tr class="h-20">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$5,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Approved</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>Huston, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Active</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-cyan-600 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>On Track</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row pr-5">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!-- 2 -->
+                <tr class="border-separate border h-20">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$20,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-yellow-500 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Awating, Approved</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>Huston, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill hidden"></i>
+                            <P class="text-gray-500">Waiting</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-cyan-600 gap-x-2">
+                            <i class="bi bi-circle-fill hidden"></i>
+                            <P class="text-gray-500">Waiting</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center	text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+                <!-- 3 -->
+                <tr class="border-separate  h-20 ">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$5,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Approved</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>Huston, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill hidden"></i>
+                            <P class="text-gray-500">Waiting</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-cyan-600 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Canceled</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center	text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!-- 4 -->
+                <tr class="border-separate  h-20 bg-red-100 border-l-red-500 border-l-4">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$5,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-red-500 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Reject</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>Huston, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-red-500 gap-x-2">
+                            <i class="bi bi-circle-fill hidden"></i>
+                            <P class="text-gray-500">Reject</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-red-500 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Overdue</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center	text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!-- 5 -->
+
+                <tr class="border-separate border h-20">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$25,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-yellow-500 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Awating, Approved</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>Huston, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill "></i>
+                            <P >Active</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-cyan-600 gap-x-2">
+                            <i class="bi bi-circle-fill "></i>
+                            <P class="">On Track</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center	text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!-- 6 -->
+
+                <tr class="border-separate  h-20 bg-red-100 border-l-red-500 border-l-4">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$30,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-red-500 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Reject</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>Huston, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-red-500 gap-x-2">
+                            <i class="bi bi-circle-fill hidden"></i>
+                            <P class="text-gray-500">Reject</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-red-500 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Overdue</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center	text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <!-- 7 -->
+
+
+                <tr class="h-20">
+                    <td class="w-9 pl-3 "><i class="bi bi-circle"></i></td>
+                    <td class="">
+                        <div class=" flex flex-row gap-x-3">
+                            <div class="w-12 h-12 rounded-full bg-red-100 mt-1"><img src="imagenes/perfil.jpg"
+                                    alt="perfi" class="w-full h-full rounded-full"></div>
+                            <div class="flex flex-col justify-center">
+                                <p>Christin Ericssen</p>
+                                <p class="text-gray-500 text-xs">CFO</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>$5,000</p>
+                        <p class="text-gray-500 text-xs">Lorem, ipsum, ipsum</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Approved</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p>New York, US</p>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-lime-400 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Active</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row text-green-600 gap-x-2">
+                            <i class="bi bi-circle-fill"></i>
+                            <P>Done</P>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="flex flex-row">
+                            <i
+                                class="bi bi-pencil-fill bg-cyan-200 w-12 h-12 rounded-full flex justify-center items-center	text-cyan-600"></i>
+                            <i
+                                class="bi bi-trash w-12 h-12 rounded-full flex justify-center items-center text-2xl text-gray-500"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+</body>
+
+</html>
