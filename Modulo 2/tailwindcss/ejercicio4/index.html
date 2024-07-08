@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        moradooscuro: "#462cb3",
+                        moradoclaro: "#b763d3"
+                    },
+                    height: {
+                        'my-custom-height': '560px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body class="bg-gradient-to-r from-moradoclaro from-23% via-moradooscuro via-100%">
+
+    <header class="flex flex-row justify-center items-center gap-x-10 h-20  text-white">
+        <div class="font-bold text-3xl">
+            <p>RELAP</p>
+        </div>
+        <input type="search" name="" id="" class="w-4/12 h-11">
+        <nav>
+            <ul class="flex flex-row gap-x-5">
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="flex flex-row gap-x-5 text-xl">
+                <li class="w-8 h-8 rounded-full flex items-center justify-center border border-white"><i
+                        class="bi bi-heart"></i></li>
+                <li class="w-8 h-8 rounded-full flex items-center justify-center border border-white"><i
+                        class="bi bi-cart4"></i></li>
+                <li class="w-8 h-8 rounded-full flex items-center justify-center border border-white"><i
+                        class="bi bi-list"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="">
+        <section class="relative  overflow-hidden mt-10">
+            <div class="absolute left-32 top-20">
+                <img src="imagenes/pngegg.png" alt="laptop" class="w-full h-full">
+            </div>
+            <div class="relative z-50 flex flex-row h-my-custom-height justify-between items-center  text-white ga ">
+                <div class="h-full pt-48"><i class="pt-52 bi bi-arrow-left-circle  ml-5 text-3xl"></i></div>
+                <div class="flex flex-row items-center flex-wrap-reverse h-full mt-60 gap-x-56">
+                    <div class="h-96 w-96"></div>
+                    <div class="flex flex-col w-96 gap-y-5 h-full">
+                        <p class="text-xs">Lorem ipsum</p>
+                        <p class="text-6xl font-bold">Ut labore et dolore</p>
+                        <button class="w-4/12 h-10 bg-yellow-400 rounded-full">Lorem.</button>
+                    </div>
+                </div>
+                <div class="h-full pt-48"><i class=" bi bi-arrow-right-circle mr-5 text-3xl"></i> </div>
+            </div>
+        </section>
+
+        <section class="w-full h-56 bg-purple-200 flex flex-row justify-center items-center flex-wrap gap-x-10">
+            <div class="flex flex-row w-48 ">
+                <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-truck"></i></div>
+                <div>
+                    <p class="text-2xl font-bold">Lorem, ipsum.</p>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="flex flex-row w-48 ">
+                <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-recycle"></i></div>
+                <div>
+                    <p class="text-2xl font-bold">Lorem, ipsum.</p>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="flex flex-row w-48 ">
+                <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-person-bounding-box"></i></div>
+                <div>
+                    <p class="text-2xl font-bold">Lorem, ipsum.</p>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="flex flex-row w-48 ">
+                <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-box2"></i></div>
+                <div>
+                    <p class="text-2xl font-bold">Lorem, ipsum.</p>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Soluta, adipisci consequuntur.</p>
+                <p>Saepe, eaque esse!</p>
+            </div>
+            <div>
+                <div>
+                    <div><img src="#" alt="img1"></div>
+                </div>
+                <div>
+                    <div><img src="#" alt="img2"></div>
+                </div>
+                <div>
+                    <div><img src="#" alt="img3"></div>
+                </div>
+                <div>
+                    <div><img src="#" alt="img4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
