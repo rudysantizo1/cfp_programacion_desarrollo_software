@@ -12,7 +12,8 @@
                 extend: {
                     colors: {
                         moradooscuro: "#462cb3",
-                        moradoclaro: "#b763d3"
+                        moradoclaro: "#b763d3",
+                        azuloscuro: "#3023AE"
                     },
                     height: {
                         'my-custom-height': '560px',
@@ -25,14 +26,15 @@
     <title>Document</title>
 </head>
 
-<body class="bg-gradient-to-r from-moradoclaro from-23% via-moradooscuro via-100%">
+<body class="bg-gradient-to-r from-moradoclaro from-23% via-moradooscuro via-100% w-full h-full">
 
-    <header class="flex flex-row justify-center items-center gap-x-10 h-20  text-white">
-        <div class="font-bold text-3xl">
+    <header class="md:flex flex-row flex-wrap justify-center items-center gap-x-10 h-auto bg-gray-400 text-white pt-4
+                    grid grid-rows-2 grid-cols-2 px-6 justify-items-between gap-x-0 ">
+        <div class=" font-bold text-3xl col-start-1">
             <p>RELAP</p>
         </div>
-        <input type="search" name="" id="" class="w-4/12 h-11">
-        <nav>
+        <input type="search" name="" id="" class="w-11/12 row-start-2 col-span-2 md: w-auto h-11">
+        <nav class="hidden lg:block">
             <ul class="flex flex-row gap-x-5">
                 <li>lorem</li>
                 <li>lorem</li>
@@ -41,8 +43,8 @@
                 <li>lorem</li>
             </ul>
         </nav>
-        <nav>
-            <ul class="flex flex-row gap-x-5 text-xl">
+        <nav class="col-start-2 row-start-1 grid place-content-end">
+            <ul class=" text-xl md: flex flex-row gap-x-5 ">
                 <li class="w-8 h-8 rounded-full flex items-center justify-center border border-white"><i
                         class="bi bi-heart"></i></li>
                 <li class="w-8 h-8 rounded-full flex items-center justify-center border border-white"><i
@@ -52,6 +54,7 @@
             </ul>
         </nav>
     </header>
+
     <main class="">
         <section class="relative  overflow-hidden mt-10">
             <div class="absolute left-32 top-20">
@@ -59,9 +62,13 @@
             </div>
             <div class="relative z-50 flex flex-row h-my-custom-height justify-between items-center  text-white ga ">
                 <div class="h-full pt-48"><i class="pt-52 bi bi-arrow-left-circle  ml-5 text-3xl"></i></div>
-                <div class="flex flex-row items-center flex-wrap-reverse h-full mt-60 gap-x-96">
-                    <div class="h-auto w-auto"></div>
-                    <div class="flex flex-col w-96 gap-y-5 h-full">
+                <div class="flex flex-row items-center flex-wrap h-full mt-60 gap-x-96">
+                    <div class="h-auto w-auto bg-gray-400 ">
+                        <div class="absolute left-32 top-20">
+                            <img src="imagenes/pngegg.png" alt="laptop" class="w-full h-full">
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-96 gap-y-5 h-full relative">
                         <p class="text-xs">Lorem ipsum</p>
                         <p class="text-6xl font-bold">Ut labore et dolore</p>
                         <button class="w-4/12 h-10 bg-yellow-400 rounded-full">Lorem.</button>
@@ -71,29 +78,30 @@
             </div>
         </section>
 
-        <section class="w-full h-56 bg-purple-200 flex flex-row justify-center items-center flex-wrap gap-x-10">
-            <div class="flex flex-row w-48 ">
+        <section
+            class="w-full h-auto bg-purple-200 grid grid-rows-4 sm:flex flex-row justify-center items-center flex-wrap gap-x-10 py-20">
+            <div class="flex flex-row w-52 gap-x-3">
                 <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-truck"></i></div>
                 <div>
                     <p class="text-2xl font-bold">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            <div class="flex flex-row w-48 ">
+            <div class="flex flex-row w-52 gap-x-3 ">
                 <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-recycle"></i></div>
                 <div>
                     <p class="text-2xl font-bold">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            <div class="flex flex-row w-48 ">
+            <div class="flex flex-row w-52 gap-x-3 ">
                 <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-person-bounding-box"></i></div>
                 <div>
                     <p class="text-2xl font-bold">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            <div class="flex flex-row w-48 ">
+            <div class="flex flex-row w-52 gap-x-3 ">
                 <div class="text-3xl text-purple-900 "><i class="font-bold bi bi-box2"></i></div>
                 <div>
                     <p class="text-2xl font-bold">Lorem, ipsum.</p>
@@ -102,35 +110,35 @@
             </div>
         </section>
 
-        <section class="bg-white flex  items-center justify-center flex-col  gap-y-20 width-full h-my-custom-height">
-            <div class="grid justify-items-center width-full h-24 gap-y font-bold mt-20">
+        <section class="bg-white flex  items-center justify-center flex-col  gap-y-20 width-full h-auto">
+            <div class="text-center width-full h-24 gap-y font-bold mt-20">
                 <p class="text-xs">Lorem, ipsum dolor.</p>
                 <p class="text-3xl">Soluta, adipisci consequuntur.</p>
                 <p class="text-xs text-gray-400">Saepe, eaque esse!</p>
             </div>
-            <div class="flex flex-row justify-around flex-wrap w-full  h-80">
-                <div class="grid justify-items-center">
-                    <div class="w-48 h-44"><img src="imagenes/laptop.png" alt="img1" class="w-full h-full"></div>
+            <div class="flex flex-row justify-around gap-6 flex-wrap w-full  h-auto mb-10">
+                <div class="grid justify-items-center h-80">
+                    <div class="w-48 h-48"><img src="imagenes/laptop.png" alt="img1" class="w-full h-full"></div>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="font-bold text-xs">Lorem, ipsum.</p>
                 </div>
-                <div class="grid justify-items-center">
+                <div class="grid justify-items-center h-80">
                     <div class="w-48 h-44"><img src="imagenes/ipad.jpg" alt="img2" class="w-full h-full"></div>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="font-bold text-xs">Lorem, ipsum.</p>
                 </div>
-                <div class="grid justify-items-center">
+                <div class="grid justify-items-center h-80">
                     <div class="w-48 h-44"><img src="imagenes/ipad.jpg" alt="img3" class="w-full h-full"></div>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="font-bold text-xs">Lorem, ipsum.</p>
                 </div>
-                <div class="grid justify-items-center">
+                <div class="grid justify-items-center h-80">
                     <div class="w-48 h-44"><img src="imagenes/laptop.png" alt="img4" class="w-full h-full"></div>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
                     <p class="text-xs text-gray-400">Lorem, ipsum.</p>
@@ -140,13 +148,13 @@
             </div>
         </section>
 
-        <section class="w-full h-my-custom-height grid justify-items-center bg-purple-200">
-            <div>
+        <section class="w-full h-auto grid justify-items-center bg-purple-200 gap-12">
+            <div class="mt-10 text-center grid font-bold">
                 <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
+                <p class="text-3xl">Lorem, ipsum dolor.</p>
             </div>
-            <div class="grid grid-cols-3 grid-rows-2 gap-4 h-96">
-                <div class="relative w-80 h-full bg-white row-span-2 overflow-hidden">
+            <div class="h-auto mb-12 flex flex-col  gap-4 lg:grid grid-cols-3 grid-rows-2  ">
+                <div class="relative w-80 h-full bg-white  overflow-hidden lg: row-span-2">
                     <div class="w-full pl-6 grid gap-y-5 z-50 pt-5">
                         <p class="font-bold text-xl">Lorem ipsum dolor sit amet.</p>
                         <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet.</p>
@@ -176,7 +184,7 @@
                             alt=""></div>
                 </div>
 
-                <div class="w-full h-full bg-white col-span-2 relative overflow-hidden">
+                <div class="w-full h-full bg-white  relative overflow-hidden lg:col-span-2">
                     <div class="pl-6 pt-6 grid place-content-start gap-1 relative z-50 w-60 h-44">
                         <p class="font-bold text-xl">Lorem ipsum dolor sit amet.</p>
                         <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet.</p>
@@ -191,8 +199,8 @@
 
 
         </section>
-        <section class="w-full h-my-custom-height bg-white grid grid-template-rows-3 content-center gap-y-12">
-            <div class="w-full h-20 flex justify-around items-end ">
+        <section class="overflow-hidden w-full h-auto bg-white grid grid-template-rows-3 content-center gap-y-12">
+            <div class="w-full h-20 flex flex-row  items-end flex-wrap lg:flex flex-cow justify-around">
                 <p class="text-5xl font-bold">Lorem, ipsum.</p>
                 <ul class="flex gap-x-6">
                     <li class="font-bold">Lorem.</li>
@@ -254,13 +262,13 @@
 
             </div>
 
-            <div class="w-full flex justify-center gap-x-1 text-4xl text-purple-400">
+            <div class="w-full flex justify-center gap-x-1 text-4xl text-purple-400 mb-12">
                 <i class="bi bi-arrow-left-circle"></i>
                 <i class="bi bi-arrow-right-circle"></i>
             </div>
         </section>
 
-        <section class="w-full h-my-custom-height bg-purple-200 flex flex-col justify-around">
+        <section class="overflow-hidden w-full h-my-custom-height bg-purple-200 flex flex-col justify-around">
             <div class="flex justify-around gap-x-96 w-full">
                 <p class="text-5xl font-bold">Lorem, ipsum.</p>
                 <div class="flex gap-1 text-5xl font-bold">
@@ -298,7 +306,8 @@
                         <p class="text-2xl font-bold">$199</p>
                         <p class="line-through decoration-red-700 decoration-2">$299</p>
                     </div>
-                    <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ex corrupti atque fuga!
+                    <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ex corrupti
+                        atque fuga!
                         Reprehenderit,
                         iusto accusantium architecto delectus corrupti ipsum incidunt laudantium sed deserunt commodi
                         asperiores voluptates, neque vitae nulla.</p>
@@ -308,7 +317,10 @@
                             <p>Sold: 120</p>
                             <p>Quanty: 500</p>
                         </div>
-                        <div class="w-full h-4 bg-gray-400 rounded-full"></div>
+                        <div class="flex">
+                            <div class="w-2/12 h-4 bg-purple-400"></div>
+                            <div class="w-10/12 h-4 bg-gray-400 "></div>
+                        </div>
                     </div>
                     <button class="rounded-full bg-purple-400 w-32 h-10 text-white font-bold">Add to cart</button>
                 </div>
@@ -316,6 +328,122 @@
             </div>
 
         </section>
+
+        <section class="w-full h-auto bg-white grid grid-template-rows-3 content-center gap-y-12">
+            <div class="w-full h-20 flex justify-around items-end ">
+                <p class="text-5xl font-bold">Lorem, ipsum.</p>
+            </div>
+
+            <div class="w-full flex justify-center flex-wrap gap-6">
+                <div class=" bg-white w-80 h-80 shadow-2xl">
+                    <div class="h-3/6 w-full hue-rotate-90 "><img class=" h-full w-full"
+                            src="https://t2.uc.ltmcdn.com/es/posts/2/7/6/como_poner_una_arroba_en_mac_21672_600.jpg"
+                            alt="imagen"></div>
+                    <div class="px-4 h-3/6 w-full flex flex-col justify-center gap-3">
+                        <p class="font-bold w-10/12 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-xs text-gray-400">june 01/2019</p>
+                    </div>
+                </div>
+
+                <div class=" bg-white w-80 h-80 shadow-2xl">
+                    <div class="h-3/6 w-full hue-rotate-90 "><img class=" h-full w-full"
+                            src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2014/03/oculusrift1.jpg?fit=1200%2C675&quality=55&strip=all&ssl=1"
+                            alt="imagen"></div>
+                    <div class="px-4 h-3/6 w-full flex flex-col justify-center gap-3">
+                        <p class="font-bold w-10/12 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-xs text-gray-400">june 01/2019</p>
+                    </div>
+                </div>
+
+                <div class=" bg-white w-80 h-80 shadow-2xl">
+                    <div class="h-3/6 w-full hue-rotate-90 "><img class=" h-full w-full"
+                            src="https://img.edilportale.com/product-thumbs/b_ELITE-Rectangular-office-desk-Las-Mobili-397464-rel13a25a1f.jpg"
+                            alt="imagen"></div>
+                    <div class="px-4 h-3/6 w-full flex flex-col justify-center gap-3">
+                        <p class="font-bold w-10/12 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-xs text-gray-400">june 01/2019</p>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="pb-6 w-full flex justify-center gap-x-1 text-5xl text-purple-400">
+                <i class="bi bi-arrow-left-circle"></i>
+                <i class="bi bi-arrow-right-circle"></i>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
+        <section class="w-full h-auto bg-azuloscuro lg:flex  items-center justify-center gap-x-24 py-28 relative">
+            <div
+                class="right-96 -top-12 rounded-full absolute w-28 h-28 bg-gradient-to-r from-moradoclaro from-23% via-moradooscuro via-100%">
+            </div>
+            <div
+                class="right-48 -bottom-36 rounded-full absolute w-80 h-80 bg-gradient-to-r from-moradoclaro from-23% via-moradooscuro via-100%">
+            </div>
+            <div
+                class="w-28 h-28 -bottom-12 -left-12 rounded-full absolute bg-gradient-to-r from-moradoclaro from-23% via-moradooscuro via-100%">
+            </div>
+            <div class="w-96 h-auto text-white relative">
+                <p class="font-bold text-sm ">Lorem, ipsum.</p>
+                <p class="font-bold text-5xl mt-5">Lorem, ipsum.</p>
+                <p class="opacity-20 text-xs mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error optio
+                    ea unde veritatis animi magni
+                    recusandae voluptatem velit inventore quis!</p>
+            </div>
+            <div class="flex gap-x-5 relative">
+                <input class="h-11 w-80" type="text" name="asda" id="texto">
+                <button class="bg-yellow-400 text-white rounded-full w-36 h-11">Suscribe</button>
+            </div>
+        </section>
+
+        <footer class="w-full h-auto relative bg-white flex gap-20 flex-col justify-evenly  pb-10 ">
+            <div class="flex w-full justify-evenly mt-20">
+                <ul class="flex flex-col text-sm gap-y-3">
+                    <li>Lorem, ipsum.</li>
+                    <li>Et, blanditiis.</li>
+                    <li>Accusamus, sequi!</li>
+                    <li>Suscipit, consequatur?</li>
+                </ul>
+                <ul class="flex flex-col text-sm gap-y-3">
+                    <li>Lorem, ipsum.</li>
+                    <li>Reprehenderit, laborum.</li>
+                    <li>Esse, quae?</li>
+                    <li>Aliquam, eaque.</li>
+                </ul>
+                <ul class="flex flex-col text-sm gap-y-3">
+                    <li>Lorem, ipsum.</li>
+                    <li>Ad, provident?</li>
+                    <li>Illo, optio!</li>
+                    <li>Nesciunt, dignissimos?</li>
+                </ul>
+                <ul class="flex flex-col text-sm gap-y-3">
+                    <li>Lorem, ipsum.</li>
+                    <li>Ratione, molestiae?</li>
+                    <li>Dignissimos, quidem!</li>
+                    <li>Sunt, beatae.</li>
+                </ul>
+            </div>
+            <div class="flex justify-between mx-36 pb-10">
+                <div>Copyright2019. All Rights Reserved</div>
+                    <ul class="flex gap-x-1">
+                        <li class="border-2  border-purple-400 text-purple-400 rounded-full w-8 h-8 flex items-center justify-center" ><i class="bi bi-facebook"></i></li>
+                        <li class="border-2  border-purple-400 text-purple-400 rounded-full w-8 h-8 flex items-center justify-center" ><i class="bi bi-twitter"></i></li>
+                        <li class="border-2  border-purple-400 text-purple-400 rounded-full w-8 h-8 flex items-center justify-center" ><i class="bi bi-instagram"></i></li>
+                    </ul>
+                    <ul class="flex gap-x-3">
+                        <li class="border-2  border-purple-400 text-purple-400 w-12 h-7 flex items-center justify-center"><i class="bi bi-paypal"></i></li>
+                        <li class="border-2  border-purple-400 text-purple-400 w-12 h-7 flex items-center justify-center"><i class="bi bi-credit-card-fill"></i></li>
+                        <li class="border-2  border-purple-400 text-purple-400 w-12 h-7 flex items-center justify-center"><i class="bi bi-currency-bitcoin"></i></li>
+                    </ul>
+            </div>
+        </footer>
+
     </main>
 
 </body>
