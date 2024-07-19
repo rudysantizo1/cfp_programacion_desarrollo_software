@@ -37,8 +37,7 @@ const {readFile} = require('node:fs/promises')
 
 async function promesas() { 
   try {
-    let data3 = await readFile('muchotexasasto.txt', 'utf-8');
-    console.log(data3);
+    console.log(await readFile('texto/muchotexto.txt', 'utf-8'));
     
   } catch (error) {
     
