@@ -10,8 +10,8 @@ const dbConfig = {
 async function run(query, params) {
     const connection = await oracledb.getConnection(dbConfig);
     const result = await connection.execute(query, params);
-    console.log(result.rows);
-    await connection.close();
+    await connection.close()
+    return result;
 }
 
 module.exports = run;
