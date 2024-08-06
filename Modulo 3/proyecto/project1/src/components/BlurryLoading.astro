@@ -1,0 +1,35 @@
+<div class="relative w-full h-full">
+    <div
+        id="imagen"
+        class="blur-3xl relative w-full h-full bg-cover bg-no-repeat"
+        style="background-image: url(https://previews.123rf.com/images/nikahgeh/nikahgeh2306/nikahgeh230602413/206170700-soldador-en-el-trabajo-en-la-f%C3%A1brica-%C3%A9l-est%C3%A1-soldando-acero.jpg);"
+    >
+    </div>
+    <div
+        id="contador_porcentaje"
+        class="absolute text-9xl text-white top-2/4 left-2/4"
+    >
+    </div>
+</div>
+
+<script>
+    const contador_porcentaje = document.getElementById("contador_porcentaje");
+    const imagen = document.getElementById("imagen");
+    let contador = 0;
+
+    let id = setInterval(() => {
+        contador++;
+        if (contador < 101) {
+            if (contador_porcentaje && imagen) {
+                contador_porcentaje.style.opacity = `${100-contador}%`
+                contador_porcentaje.innerHTML = `${contador}%`;
+                imagen.style.filter = `blur(${100 - contador}px)`;
+            }
+        } else {
+            if (contador_porcentaje) {
+                contador_porcentaje.innerHTML = "";
+            }
+            clearInterval(id);
+        }
+    }, 10);
+</script>

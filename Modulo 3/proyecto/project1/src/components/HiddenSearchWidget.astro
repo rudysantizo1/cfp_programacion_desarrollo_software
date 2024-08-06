@@ -1,0 +1,64 @@
+<!-- <div class="w-full h-full flex justify-center items-center">
+    <div
+        class="buscador bg-white w-60 h-9 flex justify-end items-center over relative overflow-hidden"
+    >
+        <input
+            type="search"
+            id="search"
+            placeholder="Search"
+            class="pl-5 left-0 w-auto absolute "
+        />
+        <i
+            id="lupa"
+            class="bi bi-search flex justify-center items-center w-12 bg-white font-black text-xl cursor-pointer relative right-0"
+        ></i>
+    </div>
+</div>
+
+<script>
+    const buscador = document.getElementsByClassName("buscador")[0];
+    const search = document.getElementById("search");
+    const lupa = document.getElementById("lupa");
+
+    lupa?.addEventListener("click", () => {
+        search?.classList.toggle("!left-50");
+        buscador?.classList.toggle("!w-12");
+    });
+</script>
+
+<style>
+    input[type="search"]:focus {
+        outline: none;
+    }
+    div,
+    input {
+        transition: all 1.2s;
+    }
+</style> -->
+
+
+<div class="flex w-full justify-center items-center">
+    <div class="bg-white h-12 w-fit flex p-2">
+        <!-- add autofocus -->
+        <input autofocus class="w-0 focus:outline-none" type="text" id="input-search" placeholder="Search..."/> 
+        <!-- <img class="h-8 cursor-pointer" src="images/search-icon.png" alt="Search Icon" id="icon-search"/> -->
+        <i id="icon-search" class="bi bi-search h-8 cursor-pointer"
+    ></i>
+    </div>
+</div>
+
+<style>
+    #input-search {
+        transition: width 0.5s;
+    }
+</style>
+
+<script>
+    const input = document.getElementById("input-search");
+    const icon = document.getElementById("icon-search");
+
+    icon?.addEventListener("click", () => {
+        input?.classList.toggle("w-40");
+    });
+
+</script>

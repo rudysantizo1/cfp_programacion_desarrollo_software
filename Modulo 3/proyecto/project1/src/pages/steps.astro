@@ -1,0 +1,103 @@
+---
+import Layout from "../../../project1/src/layouts/Layout.astro";
+import Step from "../../../project1/src/components/Step.astro";
+import Button from "../components/button.astro";
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="flex flex-col gap-4 justify-center items-center mt-72">
+        <div class="flex flex-row justify-center items-center">
+            <Step/>
+        </div>
+        <div>
+            <Button title="Prev" />
+            <Button title="Next" />
+        </div>
+    </div>
+</Layout>
+
+<script>
+
+    const carga = document.getElementsByClassName("carga");
+    const boton = document.getElementsByClassName("boton");
+    const linea = document.getElementsByClassName("linea");
+    let contador = 0;
+
+    boton[0].setAttribute('disabled','true');
+
+    Array.from(carga)[0].classList.toggle("!border-blue-500");
+    Array.from(carga)[0].classList.toggle("!text-blue-500");
+    Array.from(boton)[1].classList.toggle("!bg-blue-500");
+
+    
+
+    boton[1].addEventListener("click", () => {
+        let foundUndefined = false;
+        contador = -1;
+        Array.from(carga).forEach((element2) => {
+            if (element2.classList[12] == undefined && foundUndefined == false) {
+                element2.classList.toggle("!border-blue-500");
+                element2.classList.toggle("!text-blue-500");
+                foundUndefined = true;
+            }
+
+            if(element2.classList[12]!=undefined){
+                contador++;
+            }
+
+        });
+        console.log(contador);
+        if(Array.from(linea)[contador - 1].classList[4] !== "!bg-blue-500"){
+            Array.from(linea)[contador - 1].classList.toggle("!bg-blue-500");
+        }
+
+        validos();
+    });
+    
+
+
+    boton[0].addEventListener("click", () => {
+        let foundUndefined = false;
+        
+        if(carga[contador].classList[12] != undefined && foundUndefined == false && contador>0) {
+                carga[contador].classList.remove("!border-blue-500");
+                carga[contador].classList.remove("!text-blue-500");
+                foundUndefined = true;
+                contador--
+        }
+        if(Array.from(linea)[contador].classList[4] == "!bg-blue-500"){
+            Array.from(linea)[contador].classList.remove("!bg-blue-500");
+        }
+        validos();
+    });
+
+    function validos() {
+        if(contador> 0 && contador<3){
+           if (Array.from(boton)[1].classList[6] !== "!bg-blue-500") {
+                Array.from(boton)[1].classList.toggle("!bg-blue-500");
+                boton[1].removeAttribute('disabled');
+
+           }
+
+           if (Array.from(boton)[0].classList[6] !== "!bg-blue-500") {
+                Array.from(boton)[0].classList.toggle("!bg-blue-500");
+                boton[0].removeAttribute('disabled');
+           }
+        }
+
+        else if(contador == 0){
+            if (Array.from(boton)[0].classList[6] == "!bg-blue-500") {
+                Array.from(boton)[0].classList.remove("!bg-blue-500");
+                boton[0].setAttribute('disabled','true');
+           }
+        }
+
+        else{
+            if (Array.from(boton)[1].classList[6] == "!bg-blue-500") {
+                Array.from(boton)[1].classList.remove("!bg-blue-500");
+                boton[1].setAttribute('disabled','true');
+           }
+        }
+    }
+
+</script>

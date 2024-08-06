@@ -1,0 +1,17 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<button class:list={["boton w-32  h-8 bg-gray-500 rounded-lg text-white"]}>
+    {title}
+</button>
+
+<style>
+    button {
+        transition: all 0.5s;
+    }
+</style>

@@ -1,0 +1,79 @@
+---
+interface Props {
+    lengthProgress: number;
+}
+const { lengthProgress } = Astro.props;
+
+const classGeneral =
+    "w-96 h-44 flex justify-center items-center bg-white rounded-2xl text-4xl bg-blue-400 relative";
+
+---
+
+<div id="progress-content" class="flex flex-col gap-8 w-full justify-center items-center">
+    {
+        Array.from({ length: lengthProgress }, (_, index) => {
+            return (
+                <>
+                    <div
+                            class:list={[
+                                classGeneral,
+                                "container",
+                                {"derecha translate-x-[240%]": index%2 == 0},
+                                {"izquierda -translate-x-[240%]":index%2 == 1},
+
+                            ]}
+                        >
+                            Content
+                        </div>
+                </>
+            );
+        })
+    }
+</div>
+
+<style>
+    .container{
+        transition: all 0.5s;
+    }
+</style>
+
+<script>
+
+const contenedores = document.querySelectorAll('.container');
+
+
+function verificarVisibilidad() {
+    contenedores.forEach((contenedor) => {
+        const rect = contenedor.getBoundingClientRect();
+        const isVisible = (rect.top >= 0 && rect.bottom <= window.innerHeight);
+        
+        if (isVisible) {
+            if(contenedor.classList[11] == 'derecha'){
+                contenedor.classList.remove('translate-x-[240%]')
+            }
+            else{
+                contenedor.classList.remove('-translate-x-[240%]')
+            }
+        }
+
+        else{
+            if(contenedor.classList[11] == 'derecha'){
+                if(contenedor.classList[12] ==null){
+                    contenedor.classList.toggle('translate-x-[240%]')
+                }
+            }
+            else{
+                if(contenedor.classList[12] ==null){
+                    contenedor.classList.toggle('-translate-x-[240%]')
+                }
+            }
+        }
+
+        
+    });
+}
+
+verificarVisibilidad();
+window.addEventListener('scroll', verificarVisibilidad);
+
+</script>

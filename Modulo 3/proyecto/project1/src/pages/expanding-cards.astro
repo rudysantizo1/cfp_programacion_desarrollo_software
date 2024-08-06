@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ExpandingCard from "../components/ExpandingCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+   <div class="flex h-screen w-full p-6 gap-6">
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://th.bing.com/th/id/OIP.7JAdevA4Gwhpp54sWNOGTQHaEo?rs=1&pid=ImgDetMain"
+         />
+      <ExpandingCard
+         title="Paisaje de Guatemala 2"
+         ,
+         image="https://th.bing.com/th/id/OIP.7JAdevA4Gwhpp54sWNOGTQHaEo?rs=1&pid=ImgDetMain"
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 3"
+         ,
+         image="https://th.bing.com/th/id/OIP.7JAdevA4Gwhpp54sWNOGTQHaEo?rs=1&pid=ImgDetMain"
+         
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 4"
+         ,
+         image="https://th.bing.com/th/id/OIP.7JAdevA4Gwhpp54sWNOGTQHaEo?rs=1&pid=ImgDetMain"
+         
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 5"
+         ,
+         image="https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+         
+      />
+   </div>
+</Layout>
+
+<script>
+   const carta = document.getElementsByClassName("carta");
+   Array.from(carta)[0].classList.toggle("!w-2/3");
+   Array.from(carta)[0].children[0].classList.toggle("!block");
+
+   Array.from(carta).forEach((element) => {
+      element.addEventListener("click", () => {
+         removeActiveClasses();
+         element.classList.toggle("!w-2/3");
+         element.children[0].classList.toggle("!block");
+      });
+   });
+
+   function removeActiveClasses() {
+      Array.from(carta).forEach((element) => {
+         element.classList.remove("!w-2/3");
+         element.children[0].classList.remove("!block");
+      });
+   }
+</script>
+
