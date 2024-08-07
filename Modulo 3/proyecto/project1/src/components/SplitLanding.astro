@@ -1,0 +1,117 @@
+---
+const classBox = "box-item w-1/2 bg-blue-500 flex flex-col items-center gap-6 bg-cover bg-no-repeat font-bold overflow-hidden relative hover:w-11/12 before:opacity-40 before:w-full before:h-full before:absolute before:z-0";
+const classButton = "border-2 h-16 w-60 flex justify-center  items-center font-bold";
+---
+
+<div class="h-screen w-full flex text-white relative">
+    <div class:list={[classBox,"before:bg-purple-300"]} style="background-image: url('https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/12/15919528795340.png');">
+        <h1 class="text-6xl whitespace-nowrap z-10 mt-40">Playstation 5</h1>
+        <a href="#" class:list={[classButton,"hover:bg-purple-500 hover:border-purple-500 z-10"]}>
+            BUY NOW
+        </a>
+    </div>
+    <div class:list={[classBox,"before:bg-green-300"]} style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzOhbzb6VeAU66sR9ElelbzbRnmgiWI84YQ&s');">
+        <h1 class="text-6xl whitespace-nowrap z-10 mt-40">Xbox Series X</h1>
+        <a href="#" class:list={[classButton,"hover:bg-green-500 hover:border-green-500 z-10"]}>
+            BUY NOW
+        </a>
+    </div>
+</div>
+
+<style>
+    .box-item {
+        transition: all 2s;
+    }
+</style>
+
+<script>
+    const boxes = document.getElementsByClassName("box-item");
+    Array.from(boxes).forEach((box, index, arrayOriginal) => {
+        box.addEventListener("mouseenter", () => {
+            box.classList.add("w-1/2");
+            box.classList.remove("w-1/4");
+            arrayOriginal.forEach((boxOriginal, indexOriginal) => {
+                if (indexOriginal !== index) {
+                    boxOriginal.classList.add("w-1/4");
+                    boxOriginal.classList.remove("w-1/2");
+                }
+            });
+        });
+
+        box.addEventListener("mouseleave", () => {
+            box.classList.add("w-1/2");
+            box.classList.remove("w-1/4");
+            arrayOriginal.forEach((boxOriginal, indexOriginal) => {
+                if (indexOriginal !== index) {
+                    boxOriginal.classList.add("w-1/2");
+                    boxOriginal.classList.remove("w-1/4");
+                }
+            });
+        });
+    });
+</script>
+
+
+<!-- ---
+const classgeneral = "overflow-hidden w-2/4 h-full bg-cover bg-no-repeat relative"
+---
+
+
+<div class="w-full h-full flex">
+    <div id="playstation" class={classgeneral} style="background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/12/15919528795340.png);">
+        <div class="w-full h-full bg-purple-600 opacity-30 absolute"></div>
+        <div class="w-auto h-full relative flex flex-col flex-nowrap justify-center items-center gap-6 text-white font-semibold">
+            <h1 class="text-7xl whitespace-nowrap">Playstation 5</h1>
+           <a href="#" class="border-2 border-white px-24 py-4 hover:bg-purple-500 hover:border-none">BUY NOW</a>
+        </div>
+    </div>
+    <div id="xbox" class="overflow-hidden w-2/4 h-full bg-cover bg-no-repeat relative" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzOhbzb6VeAU66sR9ElelbzbRnmgiWI84YQ&s);">
+        <div class="w-full h-full bg-black opacity-60 absolute"></div>
+        <div class="w-full h-full relative flex flex-col justify-center items-center gap-6 text-white font-semibold">
+            <h1 class="text-7xl whitespace-nowrap">Xbox Series X</h1>
+            <button class="border-2 border-white px-24 py-4 hover:">BUY  NOW</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    #playstation, #xbox{
+        transition: width 3s;
+    }
+
+</style>
+
+
+<script>
+    const playstation = document.getElementById('playstation');
+    const xbox = document.getElementById('xbox');
+
+    if(playstation && xbox){
+        playstation.addEventListener("mouseover", () => {
+            playstation.classList.toggle('!w-[75%]')
+            xbox.classList.toggle("!w-[25%]")
+        });
+        playstation.addEventListener("mouseout", () => {
+            playstation.classList.remove('!w-[75%]')
+            xbox.classList.remove("!w-[25%]")
+
+        });
+
+
+        xbox.addEventListener("mouseover", () => {
+            playstation.classList.toggle('!w-[25%]')
+            
+            xbox.classList.toggle("!w-[75%]")
+        });
+        xbox.addEventListener("mouseout", () => { 
+            xbox.classList.remove("!w-[75%]")
+            playstation.classList.remove('!w-[25%]')
+           
+
+        });
+    }
+    
+    
+
+
+</script> -->
