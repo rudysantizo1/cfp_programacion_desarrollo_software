@@ -1,0 +1,25 @@
+---
+interface Props {
+	title: string;
+    image: string;
+}
+
+const { title, image } = Astro.props;
+---
+
+<div class=`carta flex items-end w-2/3 h-5/6 bg-green-300 p-6 rounded-[50px]
+            bg-[url('${image}')] bg-no-repeat bg-cover`>
+    <h3 class="text-white font-semibold text-2xl">
+        {title}
+    </h3>
+</div>
+
+<script>
+    const carta = document.getElementsByClassName('carta')
+    console.log(carta)
+    Array.from(carta).forEach(element => {
+        element.addEventListener('click', () => {
+            element.classList.toggle('active')
+        })
+    });
+</script>

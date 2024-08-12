@@ -88,8 +88,8 @@ window.addEventListener('scroll', verificarVisibilidad);
         Array.from({ length: 10 }, (_, index) => {
             return (
                 <div class:list={["flex justify-center font-bold items-center text-5xl scroll-item bg-blue-700 text-white p-4 h-48 w-96 rounded-xl shadow-xl shadow-black/25",
-                {"translate-x-[200%]": index % 2 == 0},
-                {"translate-x-[-200%]":index % 2 == 1}]}>
+                {"translate-x-[400%]": index % 2 == 0},
+                {"translate-x-[-400%]":index % 2 == 1}]}>
                     Item {index + 1}
                 </div>
             );
@@ -123,7 +123,7 @@ window.addEventListener('scroll', verificarVisibilidad);
             if(position < heightScreen) {
                 item.style.transform = `translateX(0)`;
             }else {
-                item.style.transform = index % 2 == 0 ? `translateX(200%)` : `translateX(-200%)`;
+                item.style.transform = index % 2 == 0 ? `translateX(400%)` : `translateX(-400%)`;
             }
         });
     }
