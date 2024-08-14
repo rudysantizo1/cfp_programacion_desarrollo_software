@@ -53,6 +53,13 @@
         display: flex;
         justify-content: space-around;
     }
+
+
+    .mi-clase{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+    }
 </style>
 
 
@@ -62,30 +69,30 @@
     const xhttp2 = new XMLHttpRequest();
     const contenedor = document.getElementById("sprites-pokemones");
     let pokemon = "1";
+    carga(pokemon);
 
 
   xhttp2.onload = function() {
     const data = JSON.parse(this.responseText);
-    for (let i = 0; i < 1302; i++) {
+    for (let i = 0; i < 151; i++) {
         const url = data.results[i].url
         
-        const xhttp3 = new XMLHttpRequest();
-        xhttp3.onload = function () {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
             const data = JSON.parse(this.responseText);
             const imagen = data.sprites.front_default
             const no = data.id;
             const nuevoImg = document.createElement('img');
             nuevoImg.setAttribute('src',`${imagen}`)
             nuevoImg.classList.add('mi-clase');
-            nuevoImg.setAttribute('style','width: 100px; height: 100px; border: 2px solid black')
             nuevoImg.setAttribute('alt',`${no}`)
             nuevoImg.setAttribute('id',`${i+1}`)
             contenedor.appendChild(nuevoImg);
         }
-        xhttp3.open("GET", `${url}`, false);
-        xhttp3.send();
+        xhttp.open("GET", `${url}`, false);
+        xhttp.send();
     }
-
+    
     Array.from(document.getElementsByClassName('mi-clase')).forEach((element) => {
            element.addEventListener('click',() => {
                pokemon = element.getAttribute('alt');
@@ -94,28 +101,11 @@
 
            })
          })
-    
   }
 
   xhttp2.open("GET", "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1302");
   xhttp2.send();
 
-  
-
-
-  xhttp.onload = function() {
-    const data = JSON.parse(this.responseText);
-    const pokemonName = data.name;
-    const pokemonNo = data.id;
-    const pokemonimg = data.sprites.front_default;
-
-    document.getElementById("nombre").innerHTML = pokemonName;
-    document.getElementById("numero").innerHTML = pokemonNo;
-    document.getElementById("imagen_pokemon").setAttribute('src',`${pokemonimg}`);
-
-  }
-  xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-  xhttp.send();
 
 
   function carga(id) {
