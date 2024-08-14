@@ -1,0 +1,53 @@
+Table Estudiante{
+  id integer [primary key]
+  name varchar2
+  last_name varchar2
+  Fecha_nacimiento datetime
+  direccion_casa varchar2
+  correo varchar2
+  fecha_inscripcion datetime2
+}
+
+Table profesores {
+  id integer [primary key]
+  name varchar2
+  last_name varchar2
+  fecha_nacimiento datetime
+  telefono integer
+}
+
+
+Table Cursos {
+  id integer [primary key]
+  profesor_id integer
+  name varchar2
+  horario varchar2
+}
+
+Table Inscripciones{
+  id_estudiante integer
+  curso_id integer
+}
+
+
+Table Calificacion{
+  id integer [primary key]
+  id_estudiante integer
+  curso_id integer
+  nota integer
+}
+
+
+Table Horarios{
+  curso_id integer
+  Hora datetime2
+  dias_semana varchar2
+}
+
+Ref: Estudiante.id - Inscripciones.id_estudiante
+Ref: Inscripciones.curso_id <> Cursos.id
+Ref: Cursos.profesor_id > profesores.id
+Ref: Horarios.curso_id < Cursos.id
+
+Ref: Estudiante.id - Calificacion.id_estudiante
+Ref: Cursos.id - Calificacion.curso_id
