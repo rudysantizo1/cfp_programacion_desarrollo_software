@@ -1,0 +1,19 @@
+function conteoNumeros(N, diff) {
+    let contador = 0;
+    for (let i = 0; i <                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             N; i++) {
+        let sumaDigitos = 0;
+        numero = i;
+        while(numero>0){
+            sumaDigitos +=  numero % 10;
+            numero = Math.floor(numero/10);
+        }
+
+        contador += i-sumaDigitos >= diff? 1 : 0;
+    }
+
+
+    console.log(`Hay en total ${contador} numeros que cumplen con la condicion`);
+
+}
+
+conteoNumeros(13 ,2)

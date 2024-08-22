@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+
+---
+<Layout title="">
+    <div class="w-full h-screen flex justify-center items-center">
+        <div class="datos w-[600px] h-80 bg-lime-400 border-4 border-black" id="datos">
+            <div class="flex  justify-between" id="datos_arriba">
+
+            </div>
+            <div class="flex flex-col items-center mt-12" id="datos_enmedio">
+
+            </div>
+
+            <div class="flex justify-between mt-20"  id="datos_abajo">
+
+            </div>
+        </div>
+    </div>
+
+</Layout>
+
+<script>
+    import { Estudiante, estudiantes } from "./index.astro";
+    const datos = document.getElementById("datos");
+    const datos_arriba = document.getElementById("datos_arriba");
+    const datos_abajo = document.getElementById("datos_abajo");
+    const datos_enmedio = document.getElementById("datos_enmedio");
+
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const estudianteId = urlParams.get('id');
+    
+    
+    
+
+    for(let clave in estudiantes){
+        if(estudiantes[clave].id == Number(estudianteId)){
+            
+            agregar_datos(Number(clave));
+            break
+        }
+    };
+    
+
+    function agregar_datos(clave: number) {
+        const Estudiantes = Object.values(estudiantes[clave])
+        let dato2= document.createTextNode(Estudiantes[0]);
+        let dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_arriba?.appendChild(dato)
+        dato.className = "text-2xl font-semibold"
+
+
+
+        dato2= document.createTextNode(Estudiantes[6]);
+        dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_arriba?.appendChild(dato)
+        dato.className = "text-2xl font-semibold"
+
+
+        dato2= document.createTextNode(Estudiantes[1]);
+        dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_enmedio?.appendChild(dato)
+        dato.className = "text-2xl font-semibold"
+
+        dato2= document.createTextNode(Estudiantes[2]);
+        dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_enmedio?.appendChild(dato)
+        dato.className = "text-2xl font-semibold"
+        
+        dato2= document.createTextNode(Estudiantes[5]);
+        dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_enmedio?.appendChild(dato)
+        dato.className = "text-2xl font-semibold"
+
+
+        dato2= document.createTextNode(Estudiantes[3]);
+        dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_abajo?.appendChild(dato)
+        dato.className = "text-2xl font-semibold"
+        
+        dato2= document.createTextNode(Estudiantes[4]);
+        dato = document.createElement("div");
+        dato.appendChild(dato2)
+        datos_abajo?.appendChild(dato)
+        dato.className = "text-2xl font-semibold";
+
+        // for(let informacion in Estudiantes){
+        //     const  dato2 = document.createTextNode(Estudiantes[informacion]);
+        //     const dato = document.createElement("div")
+        //     dato.className = "text-2xl border-2 font-semibold"
+        //     dato.appendChild(dato2)
+        //     datos?.appendChild(dato) 
+        // }
+    }
+    
+</script>

@@ -1,0 +1,55 @@
+---
+import data from "../../estudiantes.json";
+import Layout from "../layouts/Layout.astro";
+
+export interface Root {
+  id: number;
+  name: string;
+  last_name: string;
+  fecha_nacimiento: string;
+  direccion: string;
+  correo: string;
+  fecha_inscripcion: string;
+}
+
+
+export const Estudiante = data as Root;
+export const estudiantes : Root[] = [
+	Estudiante,
+	Estudiante,
+	Estudiante,
+	Estudiante,
+	Estudiante,
+];
+
+
+
+---
+
+<Layout title="Welcome to Astro.">
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Nombre</th>
+			</tr>
+		</thead>
+		<tbody>
+				{
+					Array.from({ length: estudiantes.length }, (_, index) => {
+						return (
+							<tr>
+								<td>
+									<a href={`estudianteCompleto?id=${estudiantes[index].id}`}>{estudiantes[index].id}</a>		
+								</td>
+								<td>
+									{estudiantes[index].name}
+								</td>
+							</tr>
+						);
+					})
+				}
+		</tbody>
+	</table>
+</Layout>
+

@@ -1,0 +1,9 @@
+{
+        "id":1,
+        "name": "Rudy",
+        "last_name": "Santizo",
+        "fecha_nacimiento": "09-06-2001",
+        "direccion":"6av 25-47 zona 12",
+        "correo":"rudyalejandrox@gmail.com",
+        "fecha_inscripcion":"01-01-2024"
+    } 
